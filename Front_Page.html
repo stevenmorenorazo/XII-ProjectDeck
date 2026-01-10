@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Connected with a Provider</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #003660;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            margin-top: -20px;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 40px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .service-button {
+            padding: 20px 30px;
+            font-size: 1.1rem;
+            background-color: #d6b704;
+            color: #000000;
+            border: 2px solid #333333;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .service-button:hover {
+            background-color: #aa8e32;
+            border-color: #555555;
+            transform: translateY(-2px);
+        }
+
+        .service-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Find UC Ship-Covered Health Care near UCSB - Without the Confusion</h1>
+        <h1>Lets get you connected with a provider</h1>
+        <div class="buttons-container">
+            <button class="service-button">Dental</button>
+            <button class="service-button">Primary care</button>
+            <button class="service-button">Urgent Care</button>
+            <button class="service-button">Optometrist</button>
+            <button class="service-button">Mental Health</button>
+            <button class="service-button">Help</button>
+        </div>
+    </div>
+</body>
+</html>

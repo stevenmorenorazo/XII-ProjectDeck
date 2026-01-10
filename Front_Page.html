@@ -15,10 +15,30 @@
             background-color: #003660;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #002a47;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .top-bar-title {
+            color: #FFCE34;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .main-content {
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            min-height: calc(100vh - 80px);
             padding: 20px;
         }
 
@@ -77,16 +97,21 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">Find UC Ship-Covered Health Care near UCSB - Without the Confusion</h1>
-        <h1>Lets get you connected with a provider</h1>
-        <div class="buttons-container">
-            <button class="service-button">Dental</button>
-            <button class="service-button">Primary care</button>
-            <button class="service-button">Urgent Care</button>
-            <button class="service-button">Optometrist</button>
-            <button class="service-button">Mental Health</button>
-            <button class="service-button">Help</button>
+    <div class="top-bar">
+        <div class="top-bar-title">UC Ship finder</div>
+    </div>
+    <div class="main-content">
+        <div class="container">
+            <h1 class="title">Find UC Ship-Covered Health Care near UCSB - Without the Confusion</h1>
+            <h1>Lets get you connected with a provider</h1>
+            <div class="buttons-container">
+                <button class="service-button">Dental</button>
+                <button class="service-button">Primary care</button>
+                <button class="service-button">Urgent Care</button>
+                <button class="service-button">Optometrist</button>
+                <button class="service-button">Mental Health</button>
+                <button class="service-button">Help</button>
+            </div>
         </div>
     </div>
 </body>

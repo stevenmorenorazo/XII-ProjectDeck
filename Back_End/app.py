@@ -6,7 +6,7 @@ import asyncio
 from typing import Optional, Literal, List, Dict, Any, Tuple
 
 import httpx
-from fastapi import FastAPI, Query, HTTPException
+from fastapi import FastAPI, Query, HTTPException, Body
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
@@ -17,6 +17,7 @@ load_dotenv()
 # Config
 # -----------------------------
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY", "").strip()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
 DEFAULT_RADIUS_METERS = int(os.getenv("DEFAULT_RADIUS_METERS", "5000"))
 
 GOOGLE_PLACES_NEARBY_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
@@ -106,6 +107,12 @@ class ProvidersResponse(BaseModel):
 class HelpResponse(BaseModel):
     resources: List[Dict[str, str]]
 
+class AnalyzeRequest(BaseModel):
+    text: str
+
+class AnalyzeResponse(BaseModel):
+    providerType: Category
+
 # -----------------------------
 # App
 # -----------------------------
@@ -150,6 +157,73 @@ def health():
 @app.get("/help", response_model=HelpResponse)
 def help_resources():
     return {"resources": HELP_RESOURCES}
+
+@app.post("/api/analyze-health-need", response_model=AnalyzeResponse)
+async def analyze_health_need(request: AnalyzeRequest):
+    """
+    Analyzes user text using OpenAI to suggest the appropriate healthcare provider type.
+    """
+    if not OPENAI_API_KEY:
+        raise HTTPException(
+            status_code=500,
+            detail="OPENAI_API_KEY is not set. Put it in your .env file."
+        )
+    
+    try:
+        async with httpx.AsyncClient() as client:
+            response = await client.post(
+                "https://api.openai.com/v1/chat/completions",
+                headers={
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {OPENAI_API_KEY}"
+                },
+                json={
+                    "model": "gpt-4o-mini",
+                    "messages": [
+                        {
+                            "role": "system",
+                            "content": """You are a healthcare assistant helping students at UCSB determine which type of healthcare provider they need. 
+                            Based on the user's description, suggest ONE of the following provider types:
+                            - dental (for dental issues, tooth pain, oral health, cleanings)
+                            - primary_care (for general health, check-ups, non-urgent medical issues, ongoing care)
+                            - urgent_care (for immediate but non-life-threatening medical attention, injuries, sudden illness)
+                            - optometrist (for eye exams, vision problems, eye care)
+                            - mental_health (for mental health, therapy, counseling, emotional support, anxiety, depression)
+                            
+                            Respond with ONLY the provider type key (dental, primary_care, urgent_care, optometrist, or mental_health) in lowercase, nothing else."""
+                        },
+                        {
+                            "role": "user",
+                            "content": request.text
+                        }
+                    ],
+                    "temperature": 0.3,
+                    "max_tokens": 10
+                },
+                timeout=30.0
+            )
+            
+            if response.status_code != 200:
+                error_data = response.json()
+                raise HTTPException(
+                    status_code=response.status_code,
+                    detail=f"OpenAI API error: {error_data.get('error', {}).get('message', 'Unknown error')}"
+                )
+            
+            data = response.json()
+            provider_type = data["choices"][0]["message"]["content"].strip().lower()
+            
+            # Validate provider type
+            if provider_type not in ["dental", "primary_care", "urgent_care", "optometrist", "mental_health"]:
+                # Default to primary_care if invalid response
+                provider_type = "primary_care"
+            
+            return AnalyzeResponse(providerType=provider_type)
+            
+    except httpx.TimeoutException:
+        raise HTTPException(status_code=504, detail="Request timeout. Please try again.")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error analyzing request: {str(e)}")
 
 # -----------------------------
 # Google Places calls

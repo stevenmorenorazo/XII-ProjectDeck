@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help • UC Ship Finder</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #003660;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+    }
+
+    .top-bar {
+      background-color: #002a47;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-bar-title {
+      color: #FFCE34;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      cursor: pointer;
+      display: inline-block;
+      transition: opacity 0.3s ease;
+    }
+
+    .top-bar-title:hover {
+      opacity: 0.8;
+    }
+
+    .main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.4;
+    }
+
+    .help-form {
+      background-color: #002a47;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 10px;
+      color: #FFCE34;
+      font-weight: 500;
+      font-size: 1rem;
+    }
+
+    textarea {
+      width: 100%;
+      min-height: 150px;
+      padding: 15px;
+      border-radius: 8px;
+      border: 2px solid rgba(255, 206, 52, 0.3);
+      background-color: #003660;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 1rem;
+      resize: vertical;
+      transition: border-color 0.3s ease;
+    }
+
+    textarea:focus {
+      outline: none;
+      border-color: #FFCE34;
+    }
+
+    textarea::placeholder {
+      color: #a0b8c8;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 15px;
+      background-color: #d6b704;
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #aa8e32;
+    }
+
+    .submit-btn:disabled {
+      background-color: #666;
+      cursor: not-allowed;
+      opacity: 0.6;
+    }
+
+    .loading {
+      text-align: center;
+      color: #FFCE34;
+      margin-top: 20px;
+      font-size: 0.95rem;
+    }
+
+    .result-container {
+      background-color: #002a47;
+      border-radius: 12px;
+      padding: 30px;
+      margin-top: 20px;
+      border-left: 4px solid #FFCE34;
+      display: none;
+    }
+
+    .result-container.show {
+      display: block;
+    }
+
+    .result-title {
+      color: #FFCE34;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+
+    .suggestion {
+      background-color: #003660;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .suggestion-type {
+      color: #FFCE34;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .suggestion-description {
+      color: #d9e6f2;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .suggestion-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #d6b704;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .suggestion-button:hover {
+      background-color: #aa8e32;
+    }
+
+    .error-message {
+      background-color: rgba(255, 107, 107, 0.2);
+      border: 1px solid #ff6b6b;
+      border-radius: 8px;
+      padding: 15px;
+      color: #ff6b6b;
+      margin-top: 20px;
+      display: none;
+    }
+
+    .error-message.show {
+      display: block;
+    }
+
+    @media (max-width: 600px) {
+      .main {
+        padding: 20px 15px;
+      }
+
+      h1 {
+        font-size: 1.3rem;
+      }
+
+      .help-form {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="top-bar-title" onclick="window.location.href='index.html'">UC Ship finder</div>
+  </div>
+
+  <div class="main">
+    <h1>Not sure what you need? Tell us a little and we'll point you in the right direction.</h1>
+
+    <div class="help-form">
+      <form id="helpForm">
+        <div class="form-group">
+          <label for="userInput">Describe what you're feeling or looking for:</label>
+          <textarea
+            id="userInput"
+            name="userInput"
+            placeholder="e.g., I have a toothache that's been bothering me for a few days..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="submit-btn" id="submitBtn">Get Suggestion</button>
+      </form>
+      <div class="loading" id="loading" style="display: none;">
+        Analyzing your request...
+      </div>
+      <div class="error-message" id="errorMessage"></div>
+    </div>
+
+    <div class="result-container" id="resultContainer">
+      <div class="result-title">We suggest:</div>
+      <div class="suggestion" id="suggestion"></div>
+    </div>
+  </div>
+
+  <script>
+    // Provider type mappings
+    const providerTypes = {
+      'dental': {
+        name: 'Dental Care',
+        url: 'Dental.html',
+        description: 'For dental issues, tooth pain, cleanings, and oral health concerns.'
+      },
+      'primary_care': {
+        name: 'Primary Care',
+        url: 'Primary_Care.html',
+        description: 'For general health concerns, check-ups, and ongoing medical care.'
+      },
+      'urgent_care': {
+        name: 'Urgent Care',
+        url: 'Urgent_Care.html',
+        description: 'For immediate medical attention that is not life-threatening.'
+      },
+      'optometrist': {
+        name: 'Optometrist',
+        url: 'Optometrist.html',
+        description: 'For eye exams, vision problems, and routine eye care.'
+      },
+      'mental_health': {
+        name: 'Mental Health',
+        url: 'Mental_Health.html',
+        description: 'For mental health support, therapy, counseling, and emotional well-being.'
+      }
+    };
+
+    async function callOpenAI(userText) {
+      // Call backend endpoint (API key is securely stored on the server)
+      // Update this URL if your backend runs on a different port/domain
+      const backendUrl = 'http://localhost:8000/api/analyze-health-need';
+      
+      const response = await fetch(backendUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ text: userText })
+      });
+
+      if (!response.ok) {
+        const error = await response.json().catch(() => ({ detail: 'Failed to analyze request' }));
+        throw new Error(error.detail || 'Failed to analyze request');
+      }
+
+      return await response.json();
+    }
+
+
+    function displaySuggestion(providerType) {
+      const provider = providerTypes[providerType] || providerTypes['primary_care'];
+      const suggestionDiv = document.getElementById('suggestion');
+      const resultContainer = document.getElementById('resultContainer');
+
+      suggestionDiv.innerHTML = `
+        <div class="suggestion-type">${provider.name}</div>
+        <div class="suggestion-description">${provider.description}</div>
+        <a href="${provider.url}" class="suggestion-button">View ${provider.name} Providers</a>
+      `;
+
+      resultContainer.classList.add('show');
+      resultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+
+    function showError(message) {
+      const errorDiv = document.getElementById('errorMessage');
+      errorDiv.textContent = message;
+      errorDiv.classList.add('show');
+      setTimeout(() => {
+        errorDiv.classList.remove('show');
+      }, 5000);
+    }
+
+    document.getElementById('helpForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const userText = document.getElementById('userInput').value.trim();
+      const submitBtn = document.getElementById('submitBtn');
+      const loading = document.getElementById('loading');
+      const errorMessage = document.getElementById('errorMessage');
+      const resultContainer = document.getElementById('resultContainer');
+
+      if (!userText) {
+        showError('Please describe what you\'re feeling or looking for.');
+        return;
+      }
+
+      // Hide previous results and errors
+      resultContainer.classList.remove('show');
+      errorMessage.classList.remove('show');
+
+      // Show loading state
+      submitBtn.disabled = true;
+      loading.style.display = 'block';
+
+      try {
+        const result = await callOpenAI(userText);
+        displaySuggestion(result.providerType);
+      } catch (error) {
+        console.error('Error:', error);
+        showError('Sorry, we couldn\'t process your request. Please try again or browse providers directly.');
+      } finally {
+        submitBtn.disabled = false;
+        loading.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>

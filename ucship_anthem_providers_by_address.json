@@ -1,0 +1,2747 @@
+{
+  "meta": {
+    "source": "Anthem BlueCross Find Care Search Results PDF",
+    "prepared_date": "2026-01-10",
+    "printed_timestamp": "2026-01-10 16:52 PST",
+    "plan_network": "UCSHIP PPO",
+    "search_zip": "93117",
+    "search_radius_miles": 20,
+    "note": "PDF contains up to first 100 providers of search results; parsed entries may be fewer due to formatting."
+  },
+  "meta_grouped": {
+    "total_locations": 21,
+    "total_providers": 90,
+    "grouping_method": "by_address_location"
+  },
+  "locations": [
+    {
+      "location": {
+        "address": "111 E Victoria",
+        "city": null,
+        "state": null,
+        "zip": null,
+        "county": null,
+        "full_address": "111 E Victoria",
+        "phone": "805-564-3233",
+        "website": null,
+        "distance_miles": 9.6
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Melody Rebecca",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 9.6,
+          "address": "111 E Victoria",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "805-564-3233",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Louise Hope",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Dermatology"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 9.6,
+          "address": "111 E Victoria",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "805-564-3233",
+          "website": null,
+          "care_options": [
+            "dermatology"
+          ],
+          "original_category": "dermatology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "111 E Victoria St Fl 2",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93101",
+        "county": "Santa Barbara County",
+        "full_address": "111 E Victoria St Fl 2, Santa Barbara, CA, 93101",
+        "phone": "805-564-3233",
+        "website": null,
+        "distance_miles": 9.6
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Kathleen Durgin",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 9.6,
+          "address": "111 E Victoria St Fl 2",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "zip": "93101",
+          "county": "Santa Barbara County",
+          "phone": "805-564-3233",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "111 E Victoria St Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93101",
+        "county": "Santa Barbara County",
+        "full_address": "111 E Victoria St Santa, Barbara, CA, 93101",
+        "phone": "805-564-3233",
+        "website": null,
+        "distance_miles": 9.6
+      },
+      "provider_count": 3,
+      "providers": [
+        {
+          "name": "Jill Marie Klessig, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 9.6,
+          "address": "111 E Victoria St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93101",
+          "county": "Santa Barbara County",
+          "phone": "805-564-3233",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Raghu Konanur",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 9.6,
+          "address": "111 E Victoria St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93101",
+          "county": "Santa Barbara County",
+          "phone": "805-564-3233",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Daniel Reif Greenwald,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Hematology & Oncology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 9.6,
+          "address": "111 E Victoria St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93101",
+          "county": "Santa Barbara County",
+          "phone": "805-563-0041",
+          "website": null,
+          "care_options": [
+            "oncology_hematology"
+          ],
+          "original_category": "oncology_hematology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "111 E Victoria St Ste 22",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93101",
+        "county": "Santa Barbara County",
+        "full_address": "111 E Victoria St Ste 22, Santa Barbara, CA, 93101",
+        "phone": "805-563-0041",
+        "website": null,
+        "distance_miles": 9.6
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Julian Reed Davis, MD,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Hematology & Oncology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 9.6,
+          "address": "111 E Victoria St Ste 22",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "zip": "93101",
+          "county": "Santa Barbara County",
+          "phone": "805-563-0041",
+          "website": null,
+          "care_options": [
+            "oncology_hematology"
+          ],
+          "original_category": "oncology_hematology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "1187 Coast",
+        "city": null,
+        "state": null,
+        "zip": null,
+        "county": null,
+        "full_address": "1187 Coast",
+        "phone": "310-301-6800",
+        "website": null,
+        "distance_miles": 13.0
+      },
+      "provider_count": 9,
+      "providers": [
+        {
+          "name": "Jerry Tsu-Yuen",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Pediatrics"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Sai Nandini",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Developmental",
+            "Behavioral"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "specialist_other"
+          ],
+          "original_category": "specialist_other"
+        },
+        {
+          "name": "Victor Frank",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Diagnostic"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "specialist_other"
+          ],
+          "original_category": "specialist_other"
+        },
+        {
+          "name": "Lee Stephen",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Hematology",
+            "Medicine)",
+            "Obstetrics",
+            "Gynecology"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "oncology_hematology"
+          ],
+          "original_category": "oncology_hematology"
+        },
+        {
+          "name": "Frank Hao,",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Interventional",
+            "Cardiology"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Aarti Patil",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Cardiovascular"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Justin Pryce",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "John Michael",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Mona Ranade,",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Cardiovascular"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "1187 Coast Village Rd Ste",
+        "city": null,
+        "state": null,
+        "zip": null,
+        "county": "Santa Barbara County",
+        "full_address": "1187 Coast Village Rd Ste",
+        "phone": "805-565-0020",
+        "website": null,
+        "distance_miles": 12.98
+      },
+      "provider_count": 4,
+      "providers": [
+        {
+          "name": "Ucla Jules Stein Eye",
+          "in_network": null,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family",
+            "Total Care",
+            "https://www.jsei.org"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 12.98,
+          "address": "1187 Coast Village Rd Ste",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "eye_care"
+          ],
+          "original_category": "eye_care"
+        },
+        {
+          "name": "Gary Ross Duckwiler,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Reza Jahan, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Ucla Eimg Community",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Diagnostic Radiology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 12.98,
+          "address": "1187 Coast Village Rd Ste",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "radiology"
+          ],
+          "original_category": "radiology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "1187 Coast Village Rd Ste",
+        "city": "Montecito",
+        "state": "CA",
+        "zip": "93108",
+        "county": "Santa Barbara County",
+        "full_address": "1187 Coast Village Rd Ste, Montecito, CA, 93108",
+        "phone": "805-565-0020",
+        "website": null,
+        "distance_miles": 13.0
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Charis Kaiulani Bush,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "907RGG",
+              "affiliations": "Ucla Medical Group"
+            }
+          ],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "1187 Coast Village Rd Ste",
+        "city": "a Montecito",
+        "state": "CA",
+        "zip": "93108",
+        "county": "Santa Barbara County",
+        "full_address": "1187 Coast Village Rd Ste, a Montecito, CA, 93108",
+        "phone": "805-565-0020",
+        "website": null,
+        "distance_miles": 13.0
+      },
+      "provider_count": 7,
+      "providers": [
+        {
+          "name": "Susan Cox Ahern, DO",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Endocrinology, Diabetes",
+            "& Metabolism Physician",
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "a Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Aristides Charles",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "90715J",
+              "affiliations": "Ucla Department Of Medicine Professional Group"
+            },
+            {
+              "pcp_id": "90715K",
+              "affiliations": "Ucla Medical Group"
+            }
+          ],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "a Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Susan Allison",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "970VKX",
+              "affiliations": "Ucla Medical Group"
+            }
+          ],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "a Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Samuel Asa Rauch, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "905V4C",
+              "affiliations": "Ucla Department Of Medicine Professional Group"
+            }
+          ],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "a Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Neema Jamshidi, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "a Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Lila T Pourzand, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Diagnostic Radiology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "a Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "radiology"
+          ],
+          "original_category": "radiology"
+        },
+        {
+          "name": "Stefan G Ruehm, MD,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Diagnostic Radiology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "a Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "radiology"
+          ],
+          "original_category": "radiology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "1187 Coast Village Rd Ste",
+        "city": "b Montecito",
+        "state": "CA",
+        "zip": "93108",
+        "county": "Santa Barbara County",
+        "full_address": "1187 Coast Village Rd Ste, b Montecito, CA, 93108",
+        "phone": "805-565-0020",
+        "website": null,
+        "distance_miles": 13.0
+      },
+      "provider_count": 5,
+      "providers": [
+        {
+          "name": "Ali Nsair, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "b Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Matthew Tobin Quirk,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "b Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Ravi Nara Srinivasa,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "b Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Viktor Szeder, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "b Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Noriko Salamon, MD,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Diagnostic Radiology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd Ste",
+          "city": "b Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "radiology"
+          ],
+          "original_category": "radiology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "1187 Coast Village Rd",
+        "city": "Montecito",
+        "state": "CA",
+        "zip": "93108",
+        "county": "Santa Barbara County",
+        "full_address": "1187 Coast Village Rd, Montecito, CA, 93108",
+        "phone": "310-301-6800",
+        "website": null,
+        "distance_miles": 13.0
+      },
+      "provider_count": 40,
+      "providers": [
+        {
+          "name": "Isabel H Bedoyan, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Lawrence Nathaniel",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Sagir Girish Bera, DO",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Alisa Corina Chalmers,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "965IDX",
+              "affiliations": "Ucla Medical Group"
+            }
+          ],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Grace Ingan Chen, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Geriatric Medicine",
+            "(Internal Medicine)"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Sonya Shelli",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Susan Huishu Duan,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Rebecca Nicole",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Pediatrics Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Alexander Seth Fein,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Maria P.d.i. Hamilton,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Mevan Dhaanu",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Albert Ya Po Lui, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "907RIA",
+              "affiliations": "Ucla Medical Group"
+            }
+          ],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Levon Mesropyan, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Pediatrics Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Ryan Michael Pham,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "805-565-0020",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Angela Damia Primbas,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Geriatric Medicine",
+            "(Internal Medicine)"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Joseph Caprioli, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Ophthalmology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "eye_care"
+          ],
+          "original_category": "eye_care"
+        },
+        {
+          "name": "Tony H Chan, OD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Ophthalmology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "eye_care"
+          ],
+          "original_category": "eye_care"
+        },
+        {
+          "name": "Batool Jafri, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Ophthalmology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "eye_care"
+          ],
+          "original_category": "eye_care"
+        },
+        {
+          "name": "Raffi Tachdjian, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Allergy & Immunology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "specialist_other"
+          ],
+          "original_category": "specialist_other"
+        },
+        {
+          "name": "Kodi Khodadad Azari,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Surgery of the Hand",
+            "(Surgery) Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "surgery_specialist"
+          ],
+          "original_category": "surgery_specialist"
+        },
+        {
+          "name": "Jaco Hagop Festekjian,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Orthopedic Surgery"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "orthopedics",
+            "surgery_specialist"
+          ],
+          "original_category": "surgery_specialist"
+        },
+        {
+          "name": "Samer Salim Ghostine,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Neurological Surgery"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "neurology",
+            "surgery_specialist"
+          ],
+          "original_category": "surgery_specialist"
+        },
+        {
+          "name": "Daniel Chiahsing Lu,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Neurological Surgery"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "neurology",
+            "surgery_specialist"
+          ],
+          "original_category": "surgery_specialist"
+        },
+        {
+          "name": "Wanxing Chaiho, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Hematology & Oncology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "oncology_hematology"
+          ],
+          "original_category": "oncology_hematology"
+        },
+        {
+          "name": "David Dae Young Kim,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Hematology & Oncology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "oncology_hematology"
+          ],
+          "original_category": "oncology_hematology"
+        },
+        {
+          "name": "Judy Lynn Chen, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Molly Rachel",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Interventional",
+            "Cardiology Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Justin H Hayase, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Henry Masakazu",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "Siddharth Ashok Padia,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Interventional",
+            "Cardiology Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        },
+        {
+          "name": "James Stewart",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Diagnostic Radiology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "radiology"
+          ],
+          "original_category": "radiology"
+        },
+        {
+          "name": "Cameron Hassani, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Diagnostic Radiology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "radiology"
+          ],
+          "original_category": "radiology"
+        },
+        {
+          "name": "Amy Yameng Chow, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Pulmonary Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "pulmonology"
+          ],
+          "original_category": "pulmonology"
+        },
+        {
+          "name": "Rajan Saggar, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Pulmonary Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "pulmonology"
+          ],
+          "original_category": "pulmonology"
+        },
+        {
+          "name": "Emily Randine",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Pulmonary Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "pulmonology"
+          ],
+          "original_category": "pulmonology"
+        },
+        {
+          "name": "Jaco Hagop Festekjian,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Orthopedic Surgery"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "orthopedics",
+            "surgery_specialist"
+          ],
+          "original_category": "orthopedics"
+        },
+        {
+          "name": "Samer Salim Ghostine,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Neurological Surgery"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "neurology",
+            "surgery_specialist"
+          ],
+          "original_category": "neurology"
+        },
+        {
+          "name": "Daniel Chiahsing Lu,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Neurological Surgery"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "neurology",
+            "surgery_specialist"
+          ],
+          "original_category": "neurology"
+        },
+        {
+          "name": "Gil Dov Hoftman, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Child & Adolescent",
+            "Psychiatry Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "mental_health"
+          ],
+          "original_category": "mental_health"
+        },
+        {
+          "name": "Sammy Saab, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Gastroenterology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 13.0,
+          "address": "1187 Coast Village Rd",
+          "city": "Montecito",
+          "state": "CA",
+          "zip": "93108",
+          "county": "Santa Barbara County",
+          "phone": "310-301-6800",
+          "website": null,
+          "care_options": [
+            "gastroenterology"
+          ],
+          "original_category": "gastroenterology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "200 N La Cumbre Rd Ste C",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93110",
+        "county": "Santa Barbara County",
+        "full_address": "200 N La Cumbre Rd Ste C, Santa Barbara, CA, 93110",
+        "phone": "805-687-8111",
+        "website": null,
+        "distance_miles": 6.99
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Ucla Jules Stein Eye",
+          "in_network": null,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 6.99,
+          "address": "200 N La Cumbre Rd Ste C",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "zip": "93110",
+          "county": "Santa Barbara County",
+          "phone": "805-687-8111",
+          "website": null,
+          "care_options": [
+            "eye_care"
+          ],
+          "original_category": "eye_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "215 Pesetas Ln Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93110",
+        "county": "Santa Barbara County",
+        "full_address": "215 Pesetas Ln Santa, Barbara, CA, 93110",
+        "phone": "805-681-7820",
+        "website": null,
+        "distance_miles": 6.55
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Sylvia Christina Rivera,",
+          "in_network": null,
+          "gender": "Female",
+          "specialties": [
+            "Endocrinology, Diabetes",
+            "& Metabolism Physician",
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 6.55,
+          "address": "215 Pesetas Ln Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93110",
+          "county": "Santa Barbara County",
+          "phone": "805-681-7820",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "309 W Quinto St Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93105",
+        "county": "Santa Barbara County",
+        "full_address": "309 W Quinto St Santa, Barbara, CA, 93105",
+        "phone": "805-563-0041",
+        "website": null,
+        "distance_miles": 8.43
+      },
+      "provider_count": 4,
+      "providers": [
+        {
+          "name": "Frederic Charles Kass,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Hematology (Internal",
+            "Medicine) Physician",
+            "Hematology & Oncology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 8.43,
+          "address": "309 W Quinto St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93105",
+          "county": "Santa Barbara County",
+          "phone": "805-563-0041",
+          "website": null,
+          "care_options": [
+            "oncology_hematology",
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Farnaz Haji, DO, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Surgery Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 8.43,
+          "address": "309 W Quinto St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93105",
+          "county": "Santa Barbara County",
+          "phone": "805-563-0041",
+          "website": null,
+          "care_options": [
+            "surgery_specialist"
+          ],
+          "original_category": "surgery_specialist"
+        },
+        {
+          "name": "Frederic Charles Kass,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Hematology (Internal",
+            "Medicine) Physician",
+            "Hematology & Oncology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 8.43,
+          "address": "309 W Quinto St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93105",
+          "county": "Santa Barbara County",
+          "phone": "805-563-0041",
+          "website": null,
+          "care_options": [
+            "oncology_hematology",
+            "primary_care"
+          ],
+          "original_category": "oncology_hematology"
+        },
+        {
+          "name": "Ucla Surgical Oncology",
+          "in_network": null,
+          "gender": null,
+          "specialties": [
+            "Medical Oncology"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 8.43,
+          "address": "309 W Quinto St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93105",
+          "county": "Santa Barbara County",
+          "phone": "805-563-0041",
+          "website": null,
+          "care_options": [
+            "oncology_hematology"
+          ],
+          "original_category": "oncology_hematology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "504 W Pueblo St Ste 101",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93105",
+        "county": "Santa Barbara County",
+        "full_address": "504 W Pueblo St Ste 101, Santa Barbara, CA, 93105",
+        "phone": "805-845-5305",
+        "website": null,
+        "distance_miles": 8.44
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Brett Andrew Gidney,",
+          "in_network": null,
+          "gender": "Male",
+          "specialties": [
+            "Cardiovascular Disease"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "9263EC",
+              "affiliations": "Brett Andrew Gidney Medical Corporation"
+            }
+          ],
+          "distance_miles": 8.44,
+          "address": "504 W Pueblo St Ste 101",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "zip": "93105",
+          "county": "Santa Barbara County",
+          "phone": "805-845-5305",
+          "website": null,
+          "care_options": [
+            "cardiology"
+          ],
+          "original_category": "cardiology"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5383 Hollister Ave Goleta,",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5383 Hollister Ave Goleta,, Goleta, CA, 93111",
+        "phone": "805-681-0013",
+        "website": null,
+        "distance_miles": 4.4
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Ucla Medical Group",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Goleta,",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5383 Hollister Ave Ste 160",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5383 Hollister Ave Ste 160, Goleta, CA, 93111",
+        "phone": "805-681-0013",
+        "website": null,
+        "distance_miles": 4.4
+      },
+      "provider_count": 3,
+      "providers": [
+        {
+          "name": "Shirley Yue Chang, DO",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "907RGD",
+              "affiliations": "Ucla Department Of Medicine Professional Group"
+            },
+            {
+              "pcp_id": "907RGE",
+              "affiliations": "Ucla Medical Group"
+            }
+          ],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Ste 160",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Shirin Moftakhar, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [
+            {
+              "pcp_id": "971AZ9",
+              "affiliations": "Ucla Department Of Medicine Professional Group"
+            },
+            {
+              "pcp_id": "971AZA",
+              "affiliations": "Ucla Medical Group"
+            }
+          ],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Ste 160",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Ucla Department of",
+          "in_network": null,
+          "gender": null,
+          "specialties": [
+            "Endocrinology, Diabetes",
+            "& Metabolism Physician",
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Ste 160",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5383 Hollister Ave Ste 160",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5383 Hollister Ave Ste 160, Santa Barbara, CA, 93111",
+        "phone": "805-681-0013",
+        "website": null,
+        "distance_miles": 4.4
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Ronald Reagan Ucla",
+          "in_network": null,
+          "gender": null,
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Ste 160",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        },
+        {
+          "name": "Ucla Department of",
+          "in_network": null,
+          "gender": null,
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Ste 160",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5383 Hollister Ave Ste 31",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5383 Hollister Ave Ste 31, Goleta, CA, 93111",
+        "phone": "805-681-0013",
+        "website": null,
+        "distance_miles": 4.4
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Ucla Dept of Medicine",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Ste 31",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5383 Hollister Ave Ste",
+        "city": "Santa Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5383 Hollister Ave Ste, Santa Barbara, CA, 93111",
+        "phone": "805-681-0013",
+        "website": null,
+        "distance_miles": 4.4
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Ucla Medical Center",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Internal Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave Ste",
+          "city": "Santa Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5383 Hollister Ave",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5383 Hollister Ave, Goleta, CA, 93111",
+        "phone": "805-681-0013",
+        "website": null,
+        "distance_miles": 4.4
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "James A Cook, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Family Medicine"
+          ],
+          "provider_role": "Physician",
+          "recognitions": [
+            "UC Family",
+            "Enhanced Personal",
+            "Health Care",
+            "Total Care"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 4.4,
+          "address": "5383 Hollister Ave",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0013",
+          "website": null,
+          "care_options": [
+            "primary_care"
+          ],
+          "original_category": "primary_care"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "540 W Pueblo St Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93105",
+        "county": "Santa Barbara County",
+        "full_address": "540 W Pueblo St Santa, Barbara, CA, 93105",
+        "phone": "805-563-5800",
+        "website": null,
+        "distance_miles": 8.4
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Uci University",
+          "in_network": null,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [
+            "UC Family"
+          ],
+          "pcp_ids": [],
+          "distance_miles": 8.4,
+          "address": "540 W Pueblo St Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93105",
+          "county": "Santa Barbara County",
+          "phone": "805-563-5800",
+          "website": null,
+          "care_options": [
+            "specialist_other"
+          ],
+          "original_category": "specialist_other"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2005 @@
+{
+  "meta": {
+    "source": "Anthem Blue Cross BlueShield Provider Directory PDF export",
+    "search": "Optometry search (UCSHIP PPO) within 20 miles of 93106",
+    "prepared_date": "2026-01-10",
+    "notes": [
+      "UC SHIP vision page states you don\u2019t need a referral for vision care; use an in-network Anthem Blue View Vision provider.",
+      "Blue View Vision Insight is for routine eye care; medical treatment for eyes is handled under medical benefits and may require an SHS referral within 50 miles."
+    ],
+    "counts_by_vision_service_category": {
+      "routine_vision": 77,
+      "mixed": 2
+    },
+    "entries_in_pdf": 79
+  },
+  "providers": [
+    {
+      "name": "Goleta Vision and Optometry",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 1.22,
+      "address": "7127 Hollister Ave Ste 23",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-968-3937",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Hwai-En J Tang, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 1.22,
+      "address": "6865 Hollister Ave Goleta,",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-979-3527",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "James K Yoo, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 1.22,
+      "address": "7127 Hollister Ave Ste 23",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-968-3937",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Thomas Burke",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 1.62,
+      "address": "6831 Hollister Ave Ste F",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-968-3937",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Associated Eye Specialists",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist",
+        "Ophthalmology"
+      ],
+      "provider_role": "Physician",
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 2.51,
+      "address": "5333 Hollister Ave Ste 105",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-964-4729",
+      "website": null,
+      "vision_service_category": "mixed",
+      "care_options": [
+        "optometry",
+        "ophthalmology"
+      ],
+      "referral_required": "depends",
+      "referral_note": "Routine vision care (optometry) does not require an SHS referral; medical eye treatment (ophthalmology) may require a referral within 50 miles."
+    },
+    {
+      "name": "Robert E Satty, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 2.51,
+      "address": "5333 Hollister Ave Ste 105",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-964-4729",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Carter K Andersen, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 2.88,
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Debon A Crews, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 2.88,
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Eyexam of California",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 2.88,
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Goleta Valley Optometry",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 2.88,
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-884-8465",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Nina C Katsev, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 2.88,
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Cailyn C Katsev Ruck, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 2.88,
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Two Trees Optometry",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 2.88,
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Robin T Chang, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.24,
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Tiffany D Corby, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.24,
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Eye and Vision Care Optometric Group",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 3.24,
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Chiyotaka Nomura, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.24,
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Ranjeet S Bajwa OD",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.24,
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Luke A Werkhoven, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.24,
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Dawn M Woods, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.24,
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "April S Huang, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.57,
+      "address": "4850 Hollister Ave Ste",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Julia Larson, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 3.57,
+      "address": "4850 Hollister Ave Ste",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Amanda E Beaudry, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Courtney M Ching, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Lauren B Gonzalez, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Angela M Lin, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Brian E Ng, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Sansum Clinic",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist",
+        "org"
+      ],
+      "provider_role": "Multi - Specialty Group",
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 5.65,
+      "address": "3916 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": "https://www.sansumclinic.",
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Sansum Clinic",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": "Multi - Specialty Group",
+      "provider_type": "clinic",
+      "recognitions": [
+        "Total Care"
+      ],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Brett E Simon, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Elise M Swanson, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [
+        "Enhanced Personal",
+        "Health Care",
+        "Total Care"
+      ],
+      "distance_miles": 5.65,
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Randall R Alessi, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Karen T Barbadillo, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Bliss Lewis S",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Caroline Bui, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Corinne K Chick, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Sandra Chou, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Edwin M Cook, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Bill OD Durant, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Eyexam of California",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Melody Fitch, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Catherine M Fleming, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "John Krochman OD",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Hardeep K Kataria, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Glenn K Kawaguchi, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "John J Krochmal IV IV, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Grace E Kuo, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Angela J Kwak, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Limm D Lam, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Stephen G Langsford, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Huong D Le, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Nicole V Le, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Daryl C Lipsun, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Sally E Melendez, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Jerry D Neel Jr Jr, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Morgan A Ruiz, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Francis N Vu, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Holly T Vuong, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Andrea D Wong, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Monica U Youcefi- Etniel, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Sahar Zokaeim, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 5.79,
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Cornelius J Mietus, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 6.21,
+      "address": "3710 State St Ste C Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-969-2020",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Santa Barbara Eyecare",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist",
+        "Ophthalmology",
+        "eyecare.com"
+      ],
+      "provider_role": "Physician",
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 6.96,
+      "address": "2946 De La Vina St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-967-9999",
+      "website": "https://www.santabarbara",
+      "vision_service_category": "mixed",
+      "care_options": [
+        "optometry",
+        "ophthalmology"
+      ],
+      "referral_required": "depends",
+      "referral_note": "Routine vision care (optometry) does not require an SHS referral; medical eye treatment (ophthalmology) may require a referral within 50 miles."
+    },
+    {
+      "name": "Caroline H Nguyen, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 7.02,
+      "address": "1933 Cliff Dr Ste 29 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93109",
+      "county": "Santa Barbara County",
+      "phone": "805-682-2618",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Santa Barbara Behavioral Health",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": "Multi - Specialty Group",
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 7.03,
+      "address": "504 W Pueblo St Ste 304",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-0035",
+      "website": "https://lifestance.com",
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Natalia C Santizo, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 7.8,
+      "address": "1629 State St Ste 1 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93101",
+      "county": "Santa Barbara County",
+      "phone": "805-569-2318",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Wendy L Santizo, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 7.8,
+      "address": "1629 State St Ste 1 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93101",
+      "county": "Santa Barbara County",
+      "phone": "805-569-2318",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Zachary J Reynard, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 8.17,
+      "address": "1114 State St Ste 7 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93101",
+      "county": "Santa Barbara County",
+      "phone": "805-899-1240",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Urban Optics Optometric Center",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 8.17,
+      "address": "1114 State St Ste 7 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93101",
+      "county": "Santa Barbara County",
+      "phone": "805-899-1240",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "David N Zucker, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 8.17,
+      "address": "1114 State St Ste 7 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93101",
+      "county": "Santa Barbara County",
+      "phone": "805-899-1240",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Rene Stevens, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 11.36,
+      "address": "1165 Coast Village Rd Ste",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-565-5073",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Gary F Strickland, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 11.36,
+      "address": "1165 Coast Village Rd Ste",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-565-5073",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Strickland Optometry",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": "Multi - Specialty Group",
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 11.36,
+      "address": "1165 Coast Village Rd Ste",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-565-5073",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Carpinteria Eye Care",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 19.01,
+      "address": "1013 Casitas Pass Rd",
+      "city": "Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-556-0306",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Steven M Kleen, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 19.01,
+      "address": "1013 Casitas Pass Rd",
+      "city": "Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-556-0306",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Larcabal John E",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "clinic",
+      "recognitions": [],
+      "distance_miles": 19.17,
+      "address": "5565 Carpinteria Ave Ste",
+      "city": "3 Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-684-3831",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "John E Larcabal, OD",
+      "in_network": true,
+      "gender": "Male",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 19.17,
+      "address": "5565 Carpinteria Ave Ste",
+      "city": "3 Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-684-3831",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Teresa A Mayhew, OD",
+      "in_network": true,
+      "gender": "Female",
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 19.33,
+      "address": "5434 Carpinteria Ave",
+      "city": "Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-684-5476",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    },
+    {
+      "name": "Teresa A Mayhew OD",
+      "in_network": true,
+      "gender": null,
+      "specialties": [
+        "Optometrist"
+      ],
+      "provider_role": null,
+      "provider_type": "individual",
+      "recognitions": [],
+      "distance_miles": 19.33,
+      "address": "5434 Carpinteria Ave",
+      "city": "Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-684-5476",
+      "website": null,
+      "vision_service_category": "routine_vision",
+      "care_options": [
+        "optometry"
+      ],
+      "referral_required": false,
+      "referral_note": "Routine vision care does not require an SHS referral when using an in-network vision provider."
+    }
+  ]
+}

@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Optometry Providers • UC Ship Finder</title>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background-color: #003660;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .top-bar {
+      background-color: #002a47;
+      width: 100%;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    .top-bar-title {
+      color: #FFCE34;
+      font-size: 1.8rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      cursor: pointer;
+      display: inline-block;
+      transition: opacity 0.3s ease;
+    }
+
+    .top-bar-title:hover {
+      opacity: 0.8;
+    }
+
+    .main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 500;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 25px;
+    }
+
+    .filters {
+      background-color: #002a47;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .filters h2 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      color: #FFCE34;
+    }
+
+    .filter-group { margin-bottom: 20px; }
+
+    .filter-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .filter-group input,
+    .filter-group select {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .location-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #d6b704;
+      color: #000;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .location-btn:hover { background-color: #aa8e32; }
+
+    .providers {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .provider-card {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      background-color: #002a47;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .provider-image-link {
+      display: block;
+      width: 180px;
+      cursor: pointer;
+    }
+
+    .provider-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.2s ease, filter 0.2s ease;
+    }
+
+    .provider-image-link:hover img {
+      transform: scale(1.03);
+      filter: brightness(0.92);
+    }
+
+    .provider-info { padding: 15px; }
+
+    .provider-info h3 {
+      margin-bottom: 6px;
+      font-size: 1.2rem;
+    }
+
+    .location-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .provider-count {
+      color: #FFCE34;
+      font-weight: 600;
+      font-size: 0.9rem;
+      background-color: rgba(255, 206, 52, 0.2);
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    .provider-info p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      color: #d9e6f2;
+    }
+
+    .provider-meta {
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+      color: #d9e6f2;
+      line-height: 1.35;
+    }
+
+    /* Dropdown/Accordion for multiple providers */
+    .providers-dropdown {
+      margin-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 15px;
+    }
+
+    .dropdown-toggle {
+      width: 100%;
+      padding: 12px;
+      background-color: #003660;
+      color: #ffffff;
+      border: 1px solid rgba(255, 206, 52, 0.3);
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-toggle:hover {
+      background-color: #004a7a;
+    }
+
+    .dropdown-toggle::after {
+      content: '▼';
+      font-size: 0.8rem;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-toggle.open::after {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .dropdown-content.open {
+      max-height: 2000px;
+    }
+
+    .provider-item {
+      padding: 12px;
+      margin-top: 10px;
+      background-color: rgba(0, 54, 96, 0.5);
+      border-radius: 6px;
+      border-left: 3px solid #FFCE34;
+    }
+
+    .provider-item h4 {
+      color: #FFCE34;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    .provider-item .specialty {
+      color: #d9e6f2;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .provider-item .role {
+      color: #a0b8c8;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
+    .map-preview iframe {
+      width: 100%;
+      height: 180px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .provider-links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #d6b704;
+      color: #000;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    .provider-links a:hover { background-color: #aa8e32; }
+
+    @media (max-width: 900px) {
+      .layout { grid-template-columns: 1fr; }
+
+      .provider-card { grid-template-columns: 1fr; }
+
+      .provider-image-link { width: 100%; }
+
+      .provider-card img { height: 220px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="top-bar-title" onclick="window.location.href='index.html'">UC Ship finder</div>
+  </div>
+
+  <div class="main">
+    <h1>Optometry Providers Near UCSB</h1>
+
+    <div class="layout">
+      <div class="filters">
+        <h2>Filter</h2>
+
+        <div class="filter-group">
+          <label>Sort by</label>
+          <select id="sort">
+            <option value="distance">Proximity</option>
+            <option value="name-asc">Name (A–Z)</option>
+            <option value="name-desc">Name (Z–A)</option>
+            <option value="provider-count">Provider Count</option>
+          </select>
+        </div>
+
+        <button class="location-btn" onclick="getLocation()">Use my location</button>
+        <p id="locationStatus" style="margin-top:10px;font-size:0.85rem;"></p>
+      </div>
+
+      <div class="providers" id="providers"></div>
+    </div>
+  </div>
+
+  <script>
+    const locationsData = [
+  {
+    "location": {
+      "address": "7127 Hollister Ave Ste 23",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-968-3937",
+      "distance_miles": 1.22,
+      "full_address": "7127 Hollister Ave Ste 23, Goleta, CA, 93117"
+    },
+    "provider_count": 2,
+    "providers": [
+      {
+        "name": "Goleta Vision and Optometry",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "James K Yoo, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "6865 Hollister Ave Goleta,",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-979-3527",
+      "distance_miles": 1.22,
+      "full_address": "6865 Hollister Ave Goleta,, CA"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Hwai-En J Tang, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "6831 Hollister Ave Ste F",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-968-3937",
+      "distance_miles": 1.62,
+      "full_address": "6831 Hollister Ave Ste F, Goleta, CA, 93117"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Thomas Burke",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "5333 Hollister Ave Ste 105",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-964-4729",
+      "distance_miles": 2.51,
+      "full_address": "5333 Hollister Ave Ste 105, Santa Barbara, CA, 93111"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Robert E Satty, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "5122 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "distance_miles": 2.88,
+      "full_address": "5122 Hollister Ave Santa, Barbara, CA, 93111"
+    },
+    "provider_count": 7,
+    "providers": [
+      {
+        "name": "Carter K Andersen, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Debon A Crews, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Eyexam of California",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Goleta Valley Optometry",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Nina C Katsev, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Cailyn C Katsev Ruck, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Two Trees Optometry",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "5300 Hollister Ave Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93111",
+      "county": "Santa Barbara County",
+      "phone": "805-692-6977",
+      "distance_miles": 3.24,
+      "full_address": "5300 Hollister Ave Santa, Barbara, CA, 93111"
+    },
+    "provider_count": 7,
+    "providers": [
+      {
+        "name": "Robin T Chang, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Tiffany D Corby, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Eye and Vision Care Optometric Group",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Chiyotaka Nomura, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Ranjeet S Bajwa OD",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Luke A Werkhoven, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Dawn M Woods, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "4850 Hollister Ave Ste",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-451-8180",
+      "distance_miles": 3.57,
+      "full_address": "4850 Hollister Ave Ste, CA"
+    },
+    "provider_count": 2,
+    "providers": [
+      {
+        "name": "April S Huang, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Julia Larson, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "3916 State St Ste 1c",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "distance_miles": 5.65,
+      "full_address": "3916 State St Ste 1c, Santa Barbara, CA, 93105"
+    },
+    "provider_count": 8,
+    "providers": [
+      {
+        "name": "Amanda E Beaudry, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Courtney M Ching, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Lauren B Gonzalez, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Angela M Lin, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Brian E Ng, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Sansum Clinic",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": "Multi - Specialty Group",
+        "in_network": true
+      },
+      {
+        "name": "Brett E Simon, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Elise M Swanson, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "3916 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8980",
+      "distance_miles": 5.65,
+      "full_address": "3916 State St Santa, Barbara, CA, 93105"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Sansum Clinic",
+        "gender": null,
+        "specialties": [
+          "Optometrist",
+          "org"
+        ],
+        "provider_role": "Multi - Specialty Group",
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "3855 State St Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-682-9417",
+      "distance_miles": 5.79,
+      "full_address": "3855 State St Santa, Barbara, CA, 93105"
+    },
+    "provider_count": 30,
+    "providers": [
+      {
+        "name": "Randall R Alessi, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Karen T Barbadillo, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Bliss Lewis S",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Caroline Bui, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Corinne K Chick, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Sandra Chou, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Edwin M Cook, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Bill OD Durant, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Eyexam of California",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Melody Fitch, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Catherine M Fleming, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "John Krochman OD",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Hardeep K Kataria, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Glenn K Kawaguchi, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "John J Krochmal IV IV, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Grace E Kuo, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Angela J Kwak, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Limm D Lam, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Stephen G Langsford, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Huong D Le, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Nicole V Le, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Daryl C Lipsun, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Sally E Melendez, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Jerry D Neel Jr Jr, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Morgan A Ruiz, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Francis N Vu, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Holly T Vuong, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Andrea D Wong, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Monica U Youcefi- Etniel, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Sahar Zokaeim, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "3710 State St Ste C Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-969-2020",
+      "distance_miles": 6.21,
+      "full_address": "3710 State St Ste C Santa, Barbara, CA, 93105"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Cornelius J Mietus, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "1933 Cliff Dr Ste 29 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93109",
+      "county": "Santa Barbara County",
+      "phone": "805-682-2618",
+      "distance_miles": 7.02,
+      "full_address": "1933 Cliff Dr Ste 29 Santa, Barbara, CA, 93109"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Caroline H Nguyen, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "504 W Pueblo St Ste 304",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93105",
+      "county": "Santa Barbara County",
+      "phone": "805-681-0035",
+      "distance_miles": 7.03,
+      "full_address": "504 W Pueblo St Ste 304, Santa Barbara, CA, 93105"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Santa Barbara Behavioral Health",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": "Multi - Specialty Group",
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "1629 State St Ste 1 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93101",
+      "county": "Santa Barbara County",
+      "phone": "805-569-2318",
+      "distance_miles": 7.8,
+      "full_address": "1629 State St Ste 1 Santa, Barbara, CA, 93101"
+    },
+    "provider_count": 2,
+    "providers": [
+      {
+        "name": "Natalia C Santizo, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Wendy L Santizo, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "1114 State St Ste 7 Santa",
+      "city": "Barbara",
+      "state": "CA",
+      "zip": "93101",
+      "county": "Santa Barbara County",
+      "phone": "805-899-1240",
+      "distance_miles": 8.17,
+      "full_address": "1114 State St Ste 7 Santa, Barbara, CA, 93101"
+    },
+    "provider_count": 3,
+    "providers": [
+      {
+        "name": "Zachary J Reynard, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Urban Optics Optometric Center",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "David N Zucker, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "1165 Coast Village Rd Ste",
+      "city": null,
+      "state": "CA",
+      "zip": null,
+      "county": "Santa Barbara County",
+      "phone": "805-565-5073",
+      "distance_miles": 11.36,
+      "full_address": "1165 Coast Village Rd Ste, CA"
+    },
+    "provider_count": 3,
+    "providers": [
+      {
+        "name": "Rene Stevens, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Gary F Strickland, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Strickland Optometry",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": "Multi - Specialty Group",
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "1013 Casitas Pass Rd",
+      "city": "Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-556-0306",
+      "distance_miles": 19.01,
+      "full_address": "1013 Casitas Pass Rd, Carpinteria, CA, 93013"
+    },
+    "provider_count": 2,
+    "providers": [
+      {
+        "name": "Carpinteria Eye Care",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Steven M Kleen, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "5565 Carpinteria Ave Ste",
+      "city": "3 Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-684-3831",
+      "distance_miles": 19.17,
+      "full_address": "5565 Carpinteria Ave Ste, 3 Carpinteria, CA, 93013"
+    },
+    "provider_count": 2,
+    "providers": [
+      {
+        "name": "Larcabal John E",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "John E Larcabal, OD",
+        "gender": "Male",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "5434 Carpinteria Ave",
+      "city": "Carpinteria",
+      "state": "CA",
+      "zip": "93013",
+      "county": "Santa Barbara County",
+      "phone": "805-684-5476",
+      "distance_miles": 19.33,
+      "full_address": "5434 Carpinteria Ave, Carpinteria, CA, 93013"
+    },
+    "provider_count": 2,
+    "providers": [
+      {
+        "name": "Teresa A Mayhew, OD",
+        "gender": "Female",
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      },
+      {
+        "name": "Teresa A Mayhew OD",
+        "gender": null,
+        "specialties": [
+          "Optometrist"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  }
+];
+  </script>
+  <script>
+    let userLocation = null;
+
+    function getLocation() {
+      const status = document.getElementById("locationStatus");
+      if (!navigator.geolocation) {
+        status.textContent = "Geolocation is not supported by your browser.";
+        return;
+      }
+
+      status.textContent = "Getting your location…";
+
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          userLocation = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude
+          };
+
+          status.textContent =
+            `Location enabled ✓ (${userLocation.lat.toFixed(4)}, ${userLocation.lng.toFixed(4)})`;
+
+          renderProviders();
+        },
+        () => {
+          status.textContent = "Unable to retrieve your location.";
+        }
+      );
+    }
+
+    function toggleDropdown(index) {
+      const toggle = document.getElementById(`toggle-${index}`);
+      const content = document.getElementById(`content-${index}`);
+      
+      toggle.classList.toggle('open');
+      content.classList.toggle('open');
+    }
+
+    function formatAddress(location) {
+      const parts = [];
+      if (location.address) parts.push(location.address);
+      if (location.city) parts.push(location.city);
+      if (location.state) parts.push(location.state);
+      if (location.zip) parts.push(location.zip);
+      return parts.length > 0 ? parts.join(', ') : location.full_address || 'Address not available';
+    }
+
+    function loadProviders() {
+      if (typeof locationsData !== 'undefined' && locationsData.length > 0) {
+        renderProviders();
+      } else {
+        document.getElementById('providers').innerHTML = 
+          '<p style="color: #ff6b6b;">Error loading provider data.</p>';
+      }
+    }
+
+    function renderProviders() {
+      const container = document.getElementById("providers");
+      const sortValue = document.getElementById("sort").value;
+
+      container.innerHTML = "";
+
+      let shownLocations = locationsData.map(loc => {
+        let distance = loc.location.distance_miles || null;
+        return { ...loc, distance };
+      });
+
+      // Sort locations
+      if (sortValue === "distance") {
+        shownLocations.sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
+      } else if (sortValue === "name-asc") {
+        shownLocations.sort((a, b) => formatAddress(a.location).localeCompare(formatAddress(b.location)));
+      } else if (sortValue === "name-desc") {
+        shownLocations.sort((a, b) => formatAddress(b.location).localeCompare(formatAddress(a.location)));
+      } else if (sortValue === "provider-count") {
+        shownLocations.sort((a, b) => b.provider_count - a.provider_count);
+      }
+
+      shownLocations.forEach((loc, index) => {
+        const location = loc.location;
+        const providers = loc.providers;
+        const address = formatAddress(location);
+        const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+        const telLink = location.phone ? `tel:${String(location.phone).replace(/\D/g, "")}` : null;
+        const hasMultipleProviders = providers.length > 1;
+
+        container.innerHTML += `
+          <div class="provider-card">
+            <a class="provider-image-link" href="${mapsLink}" target="_blank" rel="noopener noreferrer" aria-label="Open location in Google Maps">
+              <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=800&q=60" alt="Optometry facility">
+            </a>
+
+            <div class="provider-info">
+              <div class="location-header">
+                <h3>${address}</h3>
+                ${hasMultipleProviders ? `<span class="provider-count">${providers.length} Providers</span>` : ''}
+              </div>
+
+              ${loc.distance != null ? `<div style="color: #FFCE34; font-weight: 600; margin-bottom: 10px; font-size: 0.95rem;">📍 ${loc.distance.toFixed(1)} mi away</div>` : ''}
+
+              ${hasMultipleProviders ? '' : `
+                <div style="margin-bottom: 10px;">
+                  <h4 style="color: #FFCE34; margin-bottom: 4px;">${providers[0].name}</h4>
+                  <div class="specialty" style="color: #d9e6f2; font-size: 0.9rem;">
+                    ${providers[0].specialties ? providers[0].specialties.join(', ') : 'Optometrist'}
+                  </div>
+                  ${providers[0].provider_role ? `<div class="role" style="color: #a0b8c8; font-size: 0.85rem; font-style: italic;">${providers[0].provider_role}</div>` : ''}
+                </div>
+              `}
+
+              <div class="provider-meta">
+                ${location.phone ? `📞 ${location.phone}<br>` : ''}
+                ${location.county ? `📍 ${location.county}` : ''}
+              </div>
+
+              ${hasMultipleProviders ? `
+                <div class="providers-dropdown">
+                  <button class="dropdown-toggle" id="toggle-${index}" onclick="toggleDropdown(${index})">
+                    View ${providers.length} Providers
+                  </button>
+                  <div class="dropdown-content" id="content-${index}">
+                    ${providers.map(p => `
+                      <div class="provider-item">
+                        <h4>${p.name}</h4>
+                        <div class="specialty">${p.specialties ? p.specialties.join(', ') : 'Optometrist'}</div>
+                        ${p.provider_role ? `<div class="role">${p.provider_role}</div>` : ''}
+                        ${p.gender ? `<div style="color: #a0b8c8; font-size: 0.85rem; margin-top: 4px;">${p.gender}</div>` : ''}
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
+
+              <div class="map-preview">
+                <iframe
+                  src="https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+              </div>
+
+              <div class="provider-links">
+                ${telLink ? `<a href="${telLink}">Call</a>` : ''}
+                <a href="${mapsLink}" target="_blank">Google Maps</a>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    document.getElementById("sort").addEventListener("change", renderProviders);
+
+    // Load providers on page load
+    loadProviders();
+  </script>
+</body>
+</html>

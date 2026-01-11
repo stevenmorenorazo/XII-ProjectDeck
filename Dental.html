@@ -103,33 +103,12 @@
     }
 
     .provider-card {
-      display: grid;
-      grid-template-columns: 180px 1fr;
       background-color: #002a47;
       border-radius: 12px;
       overflow: hidden;
     }
 
-    /* ✅ Clickable image (opens Google Maps) */
-    .provider-image-link {
-      display: block;
-      width: 180px;
-      cursor: pointer;
-    }
-
-    .provider-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.2s ease, filter 0.2s ease;
-    }
-
-    .provider-image-link:hover img {
-      transform: scale(1.03);
-      filter: brightness(0.92);
-    }
-
-    .provider-info { padding: 15px; }
+    .provider-info { padding: 20px; }
 
     .provider-info h3 {
       margin-bottom: 6px;
@@ -258,12 +237,6 @@
 
     @media (max-width: 900px) {
       .layout { grid-template-columns: 1fr; }
-
-      .provider-card { grid-template-columns: 1fr; }
-
-      .provider-image-link { width: 100%; }
-
-      .provider-card img { height: 220px; }
     }
   </style>
 </head>
@@ -487,10 +460,6 @@
 
         container.innerHTML += `
           <div class="provider-card">
-            <a class="provider-image-link" href="${mapsLink}" target="_blank" rel="noopener noreferrer" aria-label="Open location in Google Maps">
-              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=60" alt="Dental facility">
-            </a>
-
             <div class="provider-info">
               <div class="location-header">
                 <h3>${locationName}</h3>

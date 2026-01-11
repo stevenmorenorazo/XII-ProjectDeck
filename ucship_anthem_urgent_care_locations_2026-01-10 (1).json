@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "source": "Anthem Blue Cross Provider Directory PDF",
+    "search": "Urgent Care \u2013 UCSHIP PPO within 20 miles of 93117",
+    "prepared_date": "2026-01-10",
+    "notes": [
+      "Urgent care visits under UC SHIP generally do not require a Student Health referral.",
+      "Distances shown in the Anthem directory were intentionally omitted; distance should be calculated by the client application."
+    ],
+    "location_count": 4
+  },
+  "locations": [
+    {
+      "location_name": "Cottage Urgent Care \u2013 Goleta (Hollister Ave)",
+      "care_options": [
+        "urgent_care"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "7070 Hollister Ave Ste 103",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-324-9270",
+      "website": "https://www.cottagehealth.org/urgentcare"
+    },
+    {
+      "location_name": "The MED Center \u2013 Goleta",
+      "care_options": [
+        "urgent_care"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "271 N Fairview Ave Ste 101",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-681-7411",
+      "website": "https://www.themedcenters.com"
+    },
+    {
+      "location_name": "Cottage Urgent Care \u2013 Calle Real",
+      "care_options": [
+        "urgent_care"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "5652 Calle Real",
+      "city": "Goleta",
+      "state": "CA",
+      "zip": "93117",
+      "county": "Santa Barbara County",
+      "phone": "805-681-8210",
+      "website": "https://www.cottagehealth.org/urgentcare"
+    },
+    {
+      "location_name": "Sansum Clinic \u2013 Pesetas Lane (Urgent Care)",
+      "care_options": [
+        "urgent_care"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "215 Pesetas Ln",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "zip": "93110",
+      "county": "Santa Barbara County",
+      "phone": "805-563-6110",
+      "website": "https://www.sansumclinic.org"
+    }
+  ]
+}

@@ -17,7 +17,8 @@ load_dotenv()
 # Config
 # -----------------------------
 GOOGLE_MAPS_API_KEY = os.getenv("GOOGLE_MAPS_API_KEY", "").strip()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "").strip()  # This will be your OpenRouter API key
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY", OPENAI_API_KEY).strip()  # Use OPENROUTER_API_KEY if set, otherwise fall back to OPENAI_API_KEY
 DEFAULT_RADIUS_METERS = int(os.getenv("DEFAULT_RADIUS_METERS", "5000"))
 
 GOOGLE_PLACES_NEARBY_URL = "https://maps.googleapis.com/maps/api/place/nearbysearch/json"
@@ -158,27 +159,87 @@ def health():
 def help_resources():
     return {"resources": HELP_RESOURCES}
 
-@app.post("/api/analyze-health-need", response_model=AnalyzeResponse)
-async def analyze_health_need(request: AnalyzeRequest):
+@app.get("/api/test-openrouter")
+async def test_openrouter():
     """
-    Analyzes user text using OpenAI to suggest the appropriate healthcare provider type.
+    Test endpoint to verify OpenRouter API is working.
+    Returns the status of the API connection.
     """
-    if not OPENAI_API_KEY:
-        raise HTTPException(
-            status_code=500,
-            detail="OPENAI_API_KEY is not set. Put it in your .env file."
-        )
+    api_key = OPENROUTER_API_KEY or OPENAI_API_KEY
+    if not api_key:
+        return {
+            "status": "error",
+            "message": "API key is not set. Set OPENROUTER_API_KEY or OPENAI_API_KEY in your .env file."
+        }
     
     try:
         async with httpx.AsyncClient() as client:
             response = await client.post(
-                "https://api.openai.com/v1/chat/completions",
+                "https://openrouter.ai/api/v1/chat/completions",
                 headers={
                     "Content-Type": "application/json",
-                    "Authorization": f"Bearer {OPENAI_API_KEY}"
+                    "Authorization": f"Bearer {api_key}",
+                    "HTTP-Referer": "https://localhost:8000",
+                    "X-Title": "UC Ship Finder"
                 },
                 json={
-                    "model": "gpt-4o-mini",
+                    "model": "openai/gpt-4o-mini",
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": "Say 'test' if you can read this."
+                        }
+                    ],
+                    "max_tokens": 5
+                },
+                timeout=10.0
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                return {
+                    "status": "success",
+                    "message": "OpenRouter API is ready!",
+                    "response": data.get("choices", [{}])[0].get("message", {}).get("content", "").strip()
+                }
+            else:
+                error_data = response.json()
+                return {
+                    "status": "error",
+                    "message": f"API returned error: {error_data.get('error', {}).get('message', 'Unknown error')}",
+                    "status_code": response.status_code
+                }
+    except Exception as e:
+        return {
+            "status": "error",
+            "message": f"Connection error: {str(e)}"
+        }
+
+@app.post("/api/analyze-health-need", response_model=AnalyzeResponse)
+async def analyze_health_need(request: AnalyzeRequest):
+    """
+    Analyzes user text using OpenRouter (or OpenAI) to suggest the appropriate healthcare provider type.
+    """
+    api_key = OPENROUTER_API_KEY or OPENAI_API_KEY
+    if not api_key:
+        raise HTTPException(
+            status_code=500,
+            detail="API key is not set. Set OPENROUTER_API_KEY or OPENAI_API_KEY in your .env file."
+        )
+    
+    try:
+        async with httpx.AsyncClient() as client:
+            # Use OpenRouter API endpoint
+            response = await client.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers={
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {api_key}",
+                    "HTTP-Referer": "https://localhost:8000",  # Optional: Your site URL
+                    "X-Title": "UC Ship Finder"  # Optional: Your app name
+                },
+                json={
+                    "model": "openai/gpt-4o-mini",  # OpenRouter format: provider/model-name
                     "messages": [
                         {
                             "role": "system",
@@ -207,7 +268,7 @@ async def analyze_health_need(request: AnalyzeRequest):
                 error_data = response.json()
                 raise HTTPException(
                     status_code=response.status_code,
-                    detail=f"OpenAI API error: {error_data.get('error', {}).get('message', 'Unknown error')}"
+                    detail=f"OpenRouter API error: {error_data.get('error', {}).get('message', 'Unknown error')}"
                 )
             
             data = response.json()

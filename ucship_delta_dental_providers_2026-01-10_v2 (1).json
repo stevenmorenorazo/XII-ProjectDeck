@@ -1,0 +1,314 @@
+{
+  "meta": {
+    "source_file": "Delta Dental - Sheet1 (1) (1).csv",
+    "source": "Delta Dental directory (CSV)",
+    "coverage": "UC SHIP Delta Dental",
+    "notes": [
+      "Dental coverage under UC SHIP is administered via Delta Dental and generally does not require an SHS referral.",
+      "Always confirm coverage and whether the provider is accepting new patients when scheduling."
+    ],
+    "row_count": 20
+  },
+  "providers": [
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "7050 Hollister Ave Ste 101 Goleta, CA, 93117-2811",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": "(805) 695-3388",
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "5901 Encina Rd Ste C1\r\nGoleta, CA, 93117-2272",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "5680 Calle Real Goleta, CA, 93117-2317",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": "(805) 979-3106",
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": "(805) 979-3106",
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": NaN,
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": NaN,
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "923 N Milpas St\r\nSanta Barbara, CA, 93103",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": "(805) 884-1998",
+      "website": null
+    },
+    {
+      "name": null,
+      "specialty": "Dental",
+      "care_options": [
+        "dental"
+      ],
+      "in_network": true,
+      "referral_required": false,
+      "address": "331 North Milpas St Ste 1A\r\nSanta Barbara, CA, 93103",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "phone": "(805) 683-5300",
+      "website": null
+    }
+  ]
+}

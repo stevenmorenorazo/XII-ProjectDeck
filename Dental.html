@@ -110,7 +110,6 @@
       overflow: hidden;
     }
 
-    /* ✅ Clickable image (opens Google Maps) */
     .provider-image-link {
       display: block;
       width: 180px;
@@ -136,11 +135,20 @@
       font-size: 1.2rem;
     }
 
-    .rating {
+    .location-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .provider-count {
       color: #FFCE34;
       font-weight: 600;
-      margin-bottom: 10px;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
+      background-color: rgba(255, 206, 52, 0.2);
+      padding: 4px 10px;
+      border-radius: 12px;
     }
 
     .provider-info p {
@@ -156,7 +164,79 @@
       line-height: 1.35;
     }
 
-    /* ✅ Embedded Google Maps preview (no API key) */
+    /* Dropdown/Accordion for multiple providers */
+    .providers-dropdown {
+      margin-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 15px;
+    }
+
+    .dropdown-toggle {
+      width: 100%;
+      padding: 12px;
+      background-color: #003660;
+      color: #ffffff;
+      border: 1px solid rgba(255, 206, 52, 0.3);
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.2s ease;
+    }
+
+    .dropdown-toggle:hover {
+      background-color: #004a7a;
+    }
+
+    .dropdown-toggle::after {
+      content: '▼';
+      font-size: 0.8rem;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-toggle.open::after {
+      transform: rotate(180deg);
+    }
+
+    .dropdown-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+
+    .dropdown-content.open {
+      max-height: 2000px;
+    }
+
+    .provider-item {
+      padding: 12px;
+      margin-top: 10px;
+      background-color: rgba(0, 54, 96, 0.5);
+      border-radius: 6px;
+      border-left: 3px solid #FFCE34;
+    }
+
+    .provider-item h4 {
+      color: #FFCE34;
+      margin-bottom: 6px;
+      font-size: 1rem;
+    }
+
+    .provider-item .specialty {
+      color: #d9e6f2;
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .provider-item .role {
+      color: #a0b8c8;
+      font-size: 0.85rem;
+      font-style: italic;
+    }
+
     .map-preview iframe {
       width: 100%;
       height: 180px;
@@ -201,26 +281,15 @@
     <h1>Dental Providers Near UCSB</h1>
 
     <div class="layout">
-      <!-- FILTERS -->
       <div class="filters">
         <h2>Filter</h2>
 
         <div class="filter-group">
           <label>Sort by</label>
           <select id="sort">
-            <option value="distance">Proximity</option>
-            <option value="rating">Rating</option>
             <option value="name-asc">Name (A–Z)</option>
             <option value="name-desc">Name (Z–A)</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label>Minimum rating</label>
-          <select id="minRating">
-            <option value="0">Any</option>
-            <option value="4">4.0+</option>
-            <option value="4.5">4.5+</option>
+            <option value="provider-count">Provider Count</option>
           </select>
         </div>
 
@@ -232,6 +301,130 @@
     </div>
   </div>
 
+  <script>
+    const locationsData = [
+  {
+    "location": {
+      "address": "331 North Milpas St Ste 1A Santa Barbara",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "county": null,
+      "phone": "(805) 683-5300",
+      "distance_miles": null,
+      "full_address": "331 North Milpas St Ste 1A Santa Barbara, CA, 93103"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Dental Provider",
+        "gender": null,
+        "specialties": [
+          "Dental"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "5680 Calle Real Goleta",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "county": null,
+      "phone": "(805) 979-3106",
+      "distance_miles": null,
+      "full_address": "5680 Calle Real Goleta, CA, 93117-2317"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Dental Provider",
+        "gender": null,
+        "specialties": [
+          "Dental"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "5901 Encina Rd Ste C1 Goleta",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "county": null,
+      "phone": null,
+      "distance_miles": null,
+      "full_address": "5901 Encina Rd Ste C1 Goleta, CA, 93117-2272"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Dental Provider",
+        "gender": null,
+        "specialties": [
+          "Dental"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "7050 Hollister Ave Ste 101 Goleta",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "county": null,
+      "phone": "(805) 695-3388",
+      "distance_miles": null,
+      "full_address": "7050 Hollister Ave Ste 101 Goleta, CA, 93117-2811"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Dental Provider",
+        "gender": null,
+        "specialties": [
+          "Dental"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  },
+  {
+    "location": {
+      "address": "923 N Milpas St Santa Barbara",
+      "city": null,
+      "state": null,
+      "zip": null,
+      "county": null,
+      "phone": "(805) 884-1998",
+      "distance_miles": null,
+      "full_address": "923 N Milpas St Santa Barbara, CA, 93103"
+    },
+    "provider_count": 1,
+    "providers": [
+      {
+        "name": "Dental Provider",
+        "gender": null,
+        "specialties": [
+          "Dental"
+        ],
+        "provider_role": null,
+        "in_network": true
+      }
+    ]
+  }
+];
+  </script>
   <script>
     let userLocation = null;
 
@@ -245,7 +438,7 @@
       status.textContent = "Getting your location…";
 
       navigator.geolocation.getCurrentPosition(
-        async (position) => {
+        (position) => {
           userLocation = {
             lat: position.coords.latitude,
             lng: position.coords.longitude
@@ -254,8 +447,7 @@
           status.textContent =
             `Location enabled ✓ (${userLocation.lat.toFixed(4)}, ${userLocation.lng.toFixed(4)})`;
 
-          // Geocode provider addresses if needed, then render
-          await geocodeProviders();
+          renderProviders();
         },
         () => {
           status.textContent = "Unable to retrieve your location.";
@@ -263,163 +455,118 @@
       );
     }
 
-    const providers = [
-      {
-        name: "Isla Vista Family Dentistry",
-        rating: 4.6,
-        description: "General and cosmetic dentistry. Student-friendly scheduling and UC SHIP billing.",
-        phone: "(805) 555-1234",
-        address: "331 North Milpas St Ste 1A, Santa Barbara, CA 93103",
-        lat: 34.4284,
-        lng: -119.7142, // Will be geocoded for accuracy
-        img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=60"
-      },
-      {
-        name: "Downtown Santa Barbara Dental",
-        rating: 4.8,
-        description: "Preventive care, cleanings, and emergency visits. Accepting new patients.",
-        phone: "(805) 555-9876",
-        address: "123 State St, Santa Barbara, CA",
-        lat: 34.4208,
-        lng: -119.6982,
-        img: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=800&q=60"
-      }
-    ];
-
-    // Geocode addresses using Google Maps Geocoding API (no API key needed for basic usage)
-    async function geocodeAddress(address) {
-      try {
-        // Using a free geocoding service (Nominatim) as fallback
-        const response = await fetch(
-          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`,
-          {
-            headers: {
-              'User-Agent': 'UC Ship Finder'
-            }
-          }
-        );
-        const data = await response.json();
-        if (data && data.length > 0) {
-          return {
-            lat: parseFloat(data[0].lat),
-            lng: parseFloat(data[0].lon)
-          };
-        }
-      } catch (error) {
-        console.error('Geocoding error:', error);
-      }
-      return null;
+    function toggleDropdown(index) {
+      const toggle = document.getElementById(`toggle-${index}`);
+      const content = document.getElementById(`content-${index}`);
+      
+      toggle.classList.toggle('open');
+      content.classList.toggle('open');
     }
 
-    // Geocode all provider addresses when location is enabled to ensure accuracy
-    async function geocodeProviders() {
-      const status = document.getElementById("locationStatus");
-      const originalStatus = status.textContent;
-      status.textContent = "Geocoding addresses for accurate distances...";
-      
-      let updated = false;
-      for (let provider of providers) {
-        // Always geocode to ensure accuracy (coordinates might be approximate)
-        const coords = await geocodeAddress(provider.address);
-        if (coords && coords.lat && coords.lng) {
-          provider.lat = coords.lat;
-          provider.lng = coords.lng;
-          updated = true;
-          console.log(`Geocoded ${provider.name}: ${coords.lat}, ${coords.lng}`);
-        }
-        // Add a small delay to respect rate limits (1 request per second)
-        await new Promise(resolve => setTimeout(resolve, 1000));
-      }
-      
-      if (updated) {
-        status.textContent = originalStatus + " (Addresses geocoded)";
-        console.log('Provider coordinates updated via geocoding');
+    function formatAddress(location) {
+      const parts = [];
+      if (location.address) parts.push(location.address);
+      if (location.city) parts.push(location.city);
+      if (location.state) parts.push(location.state);
+      if (location.zip) parts.push(location.zip);
+      return parts.length > 0 ? parts.join(', ') : location.full_address || 'Address not available';
+    }
+
+    function loadProviders() {
+      if (typeof locationsData !== 'undefined' && locationsData.length > 0) {
+        renderProviders();
       } else {
-        status.textContent = originalStatus;
+        document.getElementById('providers').innerHTML = 
+          '<p style="color: #ff6b6b;">Error loading provider data.</p>';
       }
-      renderProviders();
-    }
-
-    function distanceMiles(a, b) {
-      const toRad = (deg) => deg * Math.PI / 180;
-      const R = 6371000; // meters
-      const dLat = toRad(b.lat - a.lat);
-      const dLng = toRad(b.lng - a.lng);
-      const lat1 = toRad(a.lat);
-      const lat2 = toRad(b.lat);
-
-      const h =
-        Math.sin(dLat / 2) ** 2 +
-        Math.cos(lat1) * Math.cos(lat2) * Math.sin(dLng / 2) ** 2;
-
-      const c = 2 * Math.atan2(Math.sqrt(h), Math.sqrt(1 - h));
-      const meters = R * c;
-      return meters / 1609.344;
     }
 
     function renderProviders() {
       const container = document.getElementById("providers");
       const sortValue = document.getElementById("sort").value;
-      const minRating = parseFloat(document.getElementById("minRating").value || "0");
 
       container.innerHTML = "";
 
-      let shownProviders = [...providers]
-        .filter(p => p.rating >= minRating)
-        .map(p => {
-          if (userLocation && p.lat != null && p.lng != null && !isNaN(p.lat) && !isNaN(p.lng)) {
-            const distance = distanceMiles(userLocation, { lat: p.lat, lng: p.lng });
-            return { ...p, distance: isNaN(distance) ? null : distance };
-          }
-          return { ...p, distance: null };
-        });
+      let shownLocations = locationsData.map(loc => {
+        let distance = loc.location.distance_miles || null;
+        return { ...loc, distance };
+      });
 
-      if (sortValue === "distance") {
-        shownProviders.sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
-      } else if (sortValue === "rating") {
-        shownProviders.sort((a, b) => b.rating - a.rating);
-      } else if (sortValue === "name-asc") {
-        shownProviders.sort((a, b) => a.name.localeCompare(b.name));
+      // Sort locations
+      if (sortValue === "name-asc") {
+        shownLocations.sort((a, b) => formatAddress(a.location).localeCompare(formatAddress(b.location)));
       } else if (sortValue === "name-desc") {
-        shownProviders.sort((a, b) => b.name.localeCompare(a.name));
+        shownLocations.sort((a, b) => formatAddress(b.location).localeCompare(formatAddress(a.location)));
+      } else if (sortValue === "provider-count") {
+        shownLocations.sort((a, b) => b.provider_count - a.provider_count);
       }
 
-      shownProviders.forEach(p => {
-        const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.address)}`;
-        const telLink = `tel:${String(p.phone).replace(/\D/g, "")}`;
+      shownLocations.forEach((loc, index) => {
+        const location = loc.location;
+        const providers = loc.providers;
+        const address = formatAddress(location);
+        const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+        const telLink = location.phone ? `tel:${String(location.phone).replace(/\D/g, "")}` : null;
+        const hasMultipleProviders = providers.length > 1;
 
         container.innerHTML += `
           <div class="provider-card">
-            <a class="provider-image-link" href="${mapsLink}" target="_blank" rel="noopener noreferrer" aria-label="Open ${p.name} in Google Maps">
-              <img src="${p.img}" alt="${p.name}">
+            <a class="provider-image-link" href="${mapsLink}" target="_blank" rel="noopener noreferrer" aria-label="Open location in Google Maps">
+              <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=60" alt="Dental facility">
             </a>
 
             <div class="provider-info">
-              <h3>${p.name}</h3>
-
-              <div class="rating">
-                ★ ${p.rating}
+              <div class="location-header">
+                <h3>${address}</h3>
+                ${hasMultipleProviders ? `<span class="provider-count">${providers.length} Providers</span>` : ''}
               </div>
 
-              ${p.distance != null ? `<div style="color: #FFCE34; font-weight: 600; margin-bottom: 10px; font-size: 0.95rem;">📍 ${p.distance.toFixed(1)} mi away</div>` : ''}
+              ${loc.distance != null ? `<div style="color: #FFCE34; font-weight: 600; margin-bottom: 10px; font-size: 0.95rem;">📍 ${loc.distance.toFixed(1)} mi away</div>` : ''}
 
-              <p>${p.description}</p>
+              ${hasMultipleProviders ? '' : `
+                <div style="margin-bottom: 10px;">
+                  <h4 style="color: #FFCE34; margin-bottom: 4px;">${providers[0].name}</h4>
+                  <div class="specialty" style="color: #d9e6f2; font-size: 0.9rem;">
+                    ${providers[0].specialties ? providers[0].specialties.join(', ') : 'Dental'}
+                  </div>
+                  ${providers[0].provider_role ? `<div class="role" style="color: #a0b8c8; font-size: 0.85rem; font-style: italic;">${providers[0].provider_role}</div>` : ''}
+                </div>
+              `}
 
               <div class="provider-meta">
-                📍 ${p.address}<br>
-                📞 ${p.phone}
+                ${location.phone ? `📞 ${location.phone}<br>` : ''}
+                ${location.county ? `📍 ${location.county}` : ''}
               </div>
+
+              ${hasMultipleProviders ? `
+                <div class="providers-dropdown">
+                  <button class="dropdown-toggle" id="toggle-${index}" onclick="toggleDropdown(${index})">
+                    View ${providers.length} Providers
+                  </button>
+                  <div class="dropdown-content" id="content-${index}">
+                    ${providers.map(p => `
+                      <div class="provider-item">
+                        <h4>${p.name}</h4>
+                        <div class="specialty">${p.specialties ? p.specialties.join(', ') : 'Dental'}</div>
+                        ${p.provider_role ? `<div class="role">${p.provider_role}</div>` : ''}
+                        ${p.gender ? `<div style="color: #a0b8c8; font-size: 0.85rem; margin-top: 4px;">${p.gender}</div>` : ''}
+                      </div>
+                    `).join('')}
+                  </div>
+                </div>
+              ` : ''}
 
               <div class="map-preview">
                 <iframe
-                  src="https://www.google.com/maps?q=${encodeURIComponent(p.address)}&output=embed"
+                  src="https://www.google.com/maps?q=${encodeURIComponent(address)}&output=embed"
                   loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
               </div>
 
               <div class="provider-links">
-                <a href="${telLink}">Call</a>
+                ${telLink ? `<a href="${telLink}">Call</a>` : ''}
+                <a href="${mapsLink}" target="_blank">Google Maps</a>
               </div>
             </div>
           </div>
@@ -428,9 +575,9 @@
     }
 
     document.getElementById("sort").addEventListener("change", renderProviders);
-    document.getElementById("minRating").addEventListener("change", renderProviders);
 
-    renderProviders();
+    // Load providers on page load
+    loadProviders();
   </script>
 </body>
 </html>

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "source_file": "Delta Dental - Sheet1 (1) (2).csv",
+    "source": "Delta Dental directory (CSV, grouped by practice)",
+    "coverage": "UC SHIP Delta Dental",
+    "care_options": [
+      "dental"
+    ],
+    "referral_required": false,
+    "generated_on": "2026-01-10",
+    "row_count": 20,
+    "location_count": 5
+  },
+  "locations": [
+    {
+      "location_name": "Johnson Family Dental- Goleta",
+      "address": "7050 Hollister Ave Ste 101 Goleta, CA, 93117-2811",
+      "phone": "(805) 695-3388",
+      "people": [
+        {
+          "name": "John Nguyen",
+          "phone": "(805) 695-3388",
+          "address": "7050 Hollister Ave Ste 101 Goleta, CA, 93117-2811"
+        },
+        {
+          "name": "Jaime Sung"
+        },
+        {
+          "name": "Daniel Nolan"
+        },
+        {
+          "name": "Steven Johnson"
+        },
+        {
+          "name": "Daniel Callaghan"
+        },
+        {
+          "name": "Susan Cane"
+        }
+      ]
+    },
+    {
+      "location_name": "Doran Z Dobranszky",
+      "address": "5901 Encina Rd Ste C1 Goleta, CA, 93117-2272",
+      "phone": null,
+      "people": [
+        {
+          "name": "Doran Dobranszky",
+          "address": "5901 Encina Rd Ste C1 Goleta, CA, 93117-2272"
+        }
+      ]
+    },
+    {
+      "location_name": "Gold Coast Dental",
+      "address": "5680 Calle Real Goleta, CA, 93117-2317",
+      "phone": "(805) 979-3106",
+      "people": [
+        {
+          "name": "Mehrzad Dalaei",
+          "phone": "(805) 979-3106",
+          "address": "5680 Calle Real Goleta, CA, 93117-2317"
+        },
+        {
+          "name": "David Cho",
+          "phone": "(805) 979-3106"
+        },
+        {
+          "name": "Adrian Acosta"
+        },
+        {
+          "name": "Hanan Hemeda"
+        },
+        {
+          "name": "Alwyn Devaraj"
+        },
+        {
+          "name": "Mohamed El-Laham"
+        },
+        {
+          "name": "Nazafarine Mahroo"
+        },
+        {
+          "name": "Kevin Kit"
+        },
+        {
+          "name": "Ralph Reyes"
+        },
+        {
+          "name": "Angie Kang"
+        },
+        {
+          "name": "Byrant Nguyen"
+        }
+      ]
+    },
+    {
+      "location_name": "Eastside Family Dental Clinic",
+      "address": "923 N Milpas St Santa Barbara, CA, 93103",
+      "phone": "(805) 884-1998",
+      "people": [
+        {
+          "name": "Jeremy Lin",
+          "phone": "(805) 884-1998",
+          "address": "923 N Milpas St Santa Barbara, CA, 93103"
+        }
+      ]
+    },
+    {
+      "location_name": "Dr Zak Santa Barbara Dental Care",
+      "address": "331 North Milpas St Ste 1A Santa Barbara, CA, 93103",
+      "phone": "(805) 683-5300",
+      "people": [
+        {
+          "name": "Omeed Soltanalipouryekesamak",
+          "phone": "(805) 683-5300",
+          "address": "331 North Milpas St Ste 1A Santa Barbara, CA, 93103"
+        }
+      ]
+    }
+  ]
+}

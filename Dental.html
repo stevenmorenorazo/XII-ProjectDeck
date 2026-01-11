@@ -262,12 +262,6 @@
 
     @media (max-width: 900px) {
       .layout { grid-template-columns: 1fr; }
-
-      .provider-card { grid-template-columns: 1fr; }
-
-      .provider-image-link { width: 100%; }
-
-      .provider-card img { height: 220px; }
     }
   </style>
 </head>
@@ -287,6 +281,7 @@
         <div class="filter-group">
           <label>Sort by</label>
           <select id="sort">
+            <option value="distance">Proximity</option>
             <option value="name-asc">Name (A–Z)</option>
             <option value="name-desc">Name (Z–A)</option>
             <option value="provider-count">Provider Count</option>
@@ -493,7 +488,9 @@
       });
 
       // Sort locations
-      if (sortValue === "name-asc") {
+      if (sortValue === "distance") {
+        shownLocations.sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
+      } else if (sortValue === "name-asc") {
         shownLocations.sort((a, b) => formatAddress(a.location).localeCompare(formatAddress(b.location)));
       } else if (sortValue === "name-desc") {
         shownLocations.sort((a, b) => formatAddress(b.location).localeCompare(formatAddress(a.location)));

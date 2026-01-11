@@ -1,0 +1,3178 @@
+{
+  "meta": {
+    "source": "Anthem BlueCross Find Care Search Results PDF (Behavioral Health Professionals)",
+    "prepared_date": "2026-01-10",
+    "printed_timestamp": "2026-01-10 20:51 PST",
+    "plan_network": "UCSHIP PPO",
+    "search_zip": "93106",
+    "search_radius_miles": 20,
+    "note": "PDF includes up to first 100 providers; this JSON groups those providers by exact parsed address string."
+  },
+  "meta_grouped": {
+    "total_locations": 46,
+    "total_providers": 100,
+    "grouping_method": "by_full_address_string"
+  },
+  "locations": [
+    {
+      "location": {
+        "address": "6529 Seville Rd Isla",
+        "city": "Vista",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "6529 Seville Rd Isla, Vista, CA, 93117",
+        "phone": "805-699-6668",
+        "website": null,
+        "distance_miles": 0.5
+      },
+      "provider_count": 14,
+      "providers": [
+        {
+          "name": "Kristen E Strong, PHD, PSYD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Deniz Doruk Camsari, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Psychiatry Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Emily Paige Smith, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Solomon Ndungu, LMFT",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Amanda Kathryn Flynn, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Kelli A Sullivan, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Marni C Muenzer, LMFT, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Adrienne Renee Wilson, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Lisa J Moore, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Andrew Douglas Monasterio, DNP, PMHNP",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Psychiatric/Mental",
+            "Health Nurse",
+            "Practitioner"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Jessica Torres Preciado, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Clorinda Rossi-Shewan, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Emily Gonzalez Narog, LMFT, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Robbyn Gayle Jackson, PSYD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.5,
+          "address": "6529 Seville Rd Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "948 Embarcadero Del Norte Ste 102",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "948 Embarcadero Del Norte Ste 102, Goleta, CA, 93117",
+        "phone": "805-699-6668",
+        "website": "https://www.rula.com/anth",
+        "distance_miles": 0.53
+      },
+      "provider_count": 8,
+      "providers": [
+        {
+          "name": "Rula Health",
+          "in_network": true,
+          "gender": null,
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": null,
+          "website": "https://www.rula.com/anth",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Mindpath Health",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Clinical Psychologist",
+            "Clinical Social Worker",
+            "Marriage & Family",
+            "Therapist",
+            "Psychiatric/Mental",
+            "Health Nurse",
+            "Practitioner",
+            "Psychiatric/Mental",
+            "Health Registered Nurse",
+            "Psychiatry Physician",
+            "Multi - Specialty Group",
+            "Nurse Practitioner",
+            "Clinical Psychologist",
+            "m"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "916-576-7898",
+          "website": "https://www.mindpath.co",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Jacqueline M Henretig, PSYD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Hope Andreason, MSCP, PSYD, PHD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Kathleen Ann Fitzgerald, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Meridian Counseling",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group",
+            "counseling.com"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "888-699-4873",
+          "website": "https://www.meridian-",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Jessica Michelle Plotin, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-699-6668",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Harlan K Higginbotham Jr, PHD, PSYD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte Ste 102",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "888-699-4873",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "948 Embarcadero Del Norte",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "948 Embarcadero Del Norte, Goleta, CA, 93117",
+        "phone": "805-837-4958",
+        "website": null,
+        "distance_miles": 0.53
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Manzanita Counseling and Wellness",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Marriage & Family",
+            "Therapist",
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-837-4958",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Amber Patronyk, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.53,
+          "address": "948 Embarcadero Del Norte",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-837-4958",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "970 Embarcadero Del Mar Isla",
+        "city": "Vista",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "970 Embarcadero Del Mar Isla, Vista, CA, 93117",
+        "phone": "805-968-1511",
+        "website": "https://www.sbclinics.org",
+        "distance_miles": 0.63
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Isla Vista Neighborhood Clinic",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Clinical Social Worker",
+            "Marriage & Family",
+            "Therapist",
+            "Psychiatry Physician",
+            "Family Medicine",
+            "Physician",
+            "Internal Medicine",
+            "Physician",
+            "Multi - Specialty Group",
+            "Nurse Practitioner",
+            "Pediatrics Physician",
+            "Physician Assistant",
+            "Podiatrist",
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 0.63,
+          "address": "970 Embarcadero Del Mar Isla",
+          "city": "Vista",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-968-1511",
+          "website": "https://www.sbclinics.org",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "270 Storke Rd",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "270 Storke Rd, Goleta, CA, 93117",
+        "phone": "805-738-3259",
+        "website": null,
+        "distance_miles": 1.65
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Vasily Todoriko, MFT",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 1.65,
+          "address": "270 Storke Rd",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-738-3259",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "281 Magnolia Ave Ste 300",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "281 Magnolia Ave Ste 300, Goleta, CA, 93117",
+        "phone": "323-284-6801",
+        "website": null,
+        "distance_miles": 1.79
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Amy C Thomson, NP",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Psychiatric/Mental",
+            "Health Nurse",
+            "Practitioner",
+            "Psychiatric/Mental",
+            "Health Registered Nurse",
+            "Psychiatry Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 1.79,
+          "address": "281 Magnolia Ave Ste 300",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "323-284-6801",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "310 Pine Ave Ste B",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "310 Pine Ave Ste B, Goleta, CA, 93117",
+        "phone": "805-252-8504",
+        "website": null,
+        "distance_miles": 1.8
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Fathiah M Bauman, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 1.8,
+          "address": "310 Pine Ave Ste B",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-252-8504",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "7127 Hollister Ave Ste 25a-212",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "7127 Hollister Ave Ste 25a-212, Goleta, CA, 93117",
+        "phone": "805-451-2257",
+        "website": null,
+        "distance_miles": 2.04
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Learning beyond the Spectrum",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.04,
+          "address": "7127 Hollister Ave Ste 25a-212",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-451-2257",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Stephanie Ross, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.04,
+          "address": "7127 Hollister Ave Ste 25a-212",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-451-2257",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5951 Encina Rd Ste 110",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "5951 Encina Rd Ste 110, Goleta, CA, 93117",
+        "phone": "970-446-9456",
+        "website": null,
+        "distance_miles": 2.2
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Erica Hoover Haines, PSYD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.2,
+          "address": "5951 Encina Rd Ste 110",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "970-446-9456",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5901 Encina Rd Ste A Goleta, CA 93117 5901 Encina Rd Ste A",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "5901 Encina Rd Ste A Goleta, CA 93117 5901 Encina Rd Ste A, Goleta, CA, 93117",
+        "phone": "805-681-0035",
+        "website": null,
+        "distance_miles": 2.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.24,
+          "address": "5901 Encina Rd Ste A Goleta, CA 93117 5901 Encina Rd Ste A",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0035",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5901 Encina Rd Ste A Goleta, CA 93117 https://lifestance.com 5901 Encina Rd Ste A",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "5901 Encina Rd Ste A Goleta, CA 93117 https://lifestance.com 5901 Encina Rd Ste A, Goleta, CA, 93117",
+        "phone": "805-681-0035",
+        "website": null,
+        "distance_miles": 2.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.24,
+          "address": "5901 Encina Rd Ste A Goleta, CA 93117 https://lifestance.com 5901 Encina Rd Ste A",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0035",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5901 Encina Rd Ste A",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93117",
+        "county": "Santa Barbara County",
+        "full_address": "5901 Encina Rd Ste A, Goleta, CA, 93117",
+        "phone": "805-681-0035",
+        "website": null,
+        "distance_miles": 2.24
+      },
+      "provider_count": 3,
+      "providers": [
+        {
+          "name": "Psychiatry Physician Psychiatry Physician Luz M Rodrigues, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.24,
+          "address": "5901 Encina Rd Ste A",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0035",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Michael A Bolton, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Psychiatry Physician",
+            "Neurology Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.24,
+          "address": "5901 Encina Rd Ste A",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0035",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Susan Elizabeth Kasser, LMFT, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.24,
+          "address": "5901 Encina Rd Ste A",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93117",
+          "county": "Santa Barbara County",
+          "phone": "805-681-0035",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "351 S Patterson Ave Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "351 S Patterson Ave Santa, Barbara, CA, 93111",
+        "phone": "646-941-7645",
+        "website": null,
+        "distance_miles": 2.47
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Maria B Sandi, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.47,
+          "address": "351 S Patterson Ave Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "646-941-7645",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5333 Hollister Ave Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5333 Hollister Ave Santa, Barbara, CA, 93111",
+        "phone": "213-236-0312",
+        "website": null,
+        "distance_miles": 2.51
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Surgery Physician Scott Michael Dewhirst, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Psychiatry Physician",
+            "Neurology Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.51,
+          "address": "5333 Hollister Ave Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "213-236-0312",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5333 Hollister Ave Ste 250",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5333 Hollister Ave Ste 250, Goleta, CA, 93111",
+        "phone": "805-879-4240",
+        "website": null,
+        "distance_miles": 2.51
+      },
+      "provider_count": 5,
+      "providers": [
+        {
+          "name": "Genevieve H Cruz, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.51,
+          "address": "5333 Hollister Ave Ste 250",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-879-4240",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Mellad Michael Khoshnood, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.51,
+          "address": "5333 Hollister Ave Ste 250",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": null,
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "CA Rebecca Linda Holt, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Psychiatry Physician",
+            "Neurology with Special",
+            "Qualifications in Child",
+            "Neurology Physician",
+            "Pediatric",
+            "Neurodevelopmental",
+            "Disabilities Physician",
+            "Pediatrics Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.51,
+          "address": "5333 Hollister Ave Ste 250",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-879-4240",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Cottage Medical Group",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Clinical Social Worker",
+            "Psychiatry Physician",
+            "Adolescent Medicine",
+            "(Internal Medicine)",
+            "Physician",
+            "Critical Care Medicine",
+            "(Internal Medicine)",
+            "Physician",
+            "Developmental -",
+            "Behavioral Pediatrics",
+            "Physician",
+            "Hospitalist Physician",
+            "Multi - Specialty Group",
+            "Neonatal-Perinatal",
+            "Medicine Physician",
+            "Neurology Physician",
+            "Neurology with Special",
+            "Psychiatry Physician",
+            "Neurology Physician",
+            "Neurology with Special",
+            "Qualifications in Child",
+            "Neurology Physician",
+            "Pediatrics Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.51,
+          "address": "5333 Hollister Ave Ste 250",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "608-555-5555",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Alexander Benjamin Moxam, MD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Psychiatry Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.51,
+          "address": "5333 Hollister Ave Ste 250",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-879-4240",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5276 Hollister Ave Ste 105 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5276 Hollister Ave Ste 105 Santa, Barbara, CA, 93111",
+        "phone": "805-455-3862",
+        "website": null,
+        "distance_miles": 2.61
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Laura Goldin, PHD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist",
+            "Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.61,
+          "address": "5276 Hollister Ave Ste 105 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-455-3862",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5276 Hollister Ave Ste 106 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5276 Hollister Ave Ste 106 Santa, Barbara, CA, 93111",
+        "phone": "805-919-8707",
+        "website": null,
+        "distance_miles": 2.61
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Cassy L Brezner, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.61,
+          "address": "5276 Hollister Ave Ste 106 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-919-8707",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Christina Ortiz, LMFT, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.61,
+          "address": "5276 Hollister Ave Ste 106 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "646-453-6777",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5276 Hollister Ave Ste 252 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5276 Hollister Ave Ste 252 Santa, Barbara, CA, 93111",
+        "phone": "805-452-4638",
+        "website": null,
+        "distance_miles": 2.61
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Angela M Coady, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.61,
+          "address": "5276 Hollister Ave Ste 252 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-452-4638",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "160 S Patterson Ave Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "160 S Patterson Ave Santa, Barbara, CA, 93111",
+        "phone": "888-515-3834",
+        "website": "https://www.pathccm.com",
+        "distance_miles": 2.63
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Memory Check Psychological Services",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.63,
+          "address": "160 S Patterson Ave Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "888-515-3834",
+          "website": "https://www.pathccm.com",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste 205 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste 205 Santa, Barbara, CA, 93111",
+        "phone": "805-394-8533",
+        "website": "https://www.rwsb.org",
+        "distance_miles": 2.66
+      },
+      "provider_count": 5,
+      "providers": [
+        {
+          "name": "Amy Rochelle Kuehl, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 205 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-394-8553",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Rose Wellness",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Clinical Social Worker",
+            "Marriage & Family",
+            "Therapist",
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 205 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-394-8553",
+          "website": "https://www.rwsb.org",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Amanda Halloway, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 205 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-394-8533",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Sierra R Smargon, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 205 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-394-8533",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Maricela Hidalgo, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 205 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-394-8533",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste 212 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste 212 Santa, Barbara, CA, 93111",
+        "phone": "646-453-6777",
+        "website": null,
+        "distance_miles": 2.66
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Katrina A Pesl, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 212 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "646-453-6777",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "James A Fortman, PSYD",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Clinical",
+            "Neuropsychologist",
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 212 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-451-1463",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste 240 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste 240 Santa, Barbara, CA, 93111",
+        "phone": "805-886-3045",
+        "website": null,
+        "distance_miles": 2.66
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Debbie L MC Hann, MFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 240 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-886-3045",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste 327 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste 327 Santa, Barbara, CA, 93111",
+        "phone": "805-451-1679",
+        "website": null,
+        "distance_miles": 2.66
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Center A Marriage and Family Therapy Corpora",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 327 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-451-1679",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Karima Shamma-Cox, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste 327 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "845-459-3117",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste A104",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste A104, Goleta, CA, 93111",
+        "phone": "805-699-5810",
+        "website": null,
+        "distance_miles": 2.66
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Rebecca Sue Goodman, PHD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical",
+            "Neuropsychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste A104",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-699-5810",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste C- 323 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste C- 323 Santa, Barbara, CA, 93111",
+        "phone": "805-683-9466",
+        "website": null,
+        "distance_miles": 2.66
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Darren W Robuck, LPCC",
+          "in_network": true,
+          "gender": "Male",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.66,
+          "address": "5266 Hollister Ave Ste C- 323 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-683-9466",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5290 Overpass Rd Ste 209 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5290 Overpass Rd Ste 209 Santa, Barbara, CA, 93111",
+        "phone": "646-453-6777",
+        "website": null,
+        "distance_miles": 2.79
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Anna C Ewald, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.79,
+          "address": "5290 Overpass Rd Ste 209 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "646-453-6777",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5290 Overpass Rd Ste 231 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5290 Overpass Rd Ste 231 Santa, Barbara, CA, 93111",
+        "phone": "805-967-6241",
+        "website": "https://www.autismprthelp",
+        "distance_miles": 2.79
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Koegel Autism Consultants",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Behavioral Analyst",
+            ".com"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.79,
+          "address": "5290 Overpass Rd Ste 231 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-967-6241",
+          "website": "https://www.autismprthelp",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Koegel Autism Consultants",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Behavioral Analyst",
+            "Speech-Language",
+            "Pathologist",
+            ".com"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.79,
+          "address": "5290 Overpass Rd Ste 231 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-967-6147",
+          "website": "https://www.autismprthelp",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5142 Hollister Ave Pmb 572 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5142 Hollister Ave Pmb 572 Santa, Barbara, CA, 93111",
+        "phone": "646-453-6777",
+        "website": null,
+        "distance_miles": 2.86
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Jacqueline S Robertson, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.86,
+          "address": "5142 Hollister Ave Pmb 572 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "646-453-6777",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5142 Hollister Ave Ste 506 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5142 Hollister Ave Ste 506 Santa, Barbara, CA, 93111",
+        "phone": "408-335-6258",
+        "website": "https://www.happierliving.",
+        "distance_miles": 2.89
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Cucumber Wellness",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group",
+            "com"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.89,
+          "address": "5142 Hollister Ave Ste 506 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "408-335-6258",
+          "website": "https://www.happierliving.",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5142 Hollister Ave Ste 542 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5142 Hollister Ave Ste 542 Santa, Barbara, CA, 93111",
+        "phone": "949-474-1493",
+        "website": "https://instepps.com",
+        "distance_miles": 2.89
+      },
+      "provider_count": 3,
+      "providers": [
+        {
+          "name": "In Stepps",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.89,
+          "address": "5142 Hollister Ave Ste 542 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "424-400-9239",
+          "website": "https://instepps.com",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Kylie B Joe, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.89,
+          "address": "5142 Hollister Ave Ste 542 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "949-474-1493",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Jennifer Symon, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.89,
+          "address": "5142 Hollister Ave Ste 542 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "949-474-1493",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5142 Hollister Ave Ste 549 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5142 Hollister Ave Ste 549 Santa, Barbara, CA, 93111",
+        "phone": "888-588-8995",
+        "website": "https://www.foresightment",
+        "distance_miles": 2.89
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Foresight Mental Health",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Clinical Social Worker",
+            "Multi - Specialty Group",
+            "alhealth.com"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.89,
+          "address": "5142 Hollister Ave Ste 549 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "888-588-8995",
+          "website": "https://www.foresightment",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5580 Calle Real",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5580 Calle Real, Goleta, CA, 93111",
+        "phone": "805-617-7878",
+        "website": "https://www.sbclinics.org",
+        "distance_miles": 2.99
+      },
+      "provider_count": 2,
+      "providers": [
+        {
+          "name": "Goleta Neighborhood Clinic",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Clinical Psychologist",
+            "Clinical Social Worker",
+            "Psychiatric/Mental",
+            "Health Nurse",
+            "Practitioner",
+            "Psychiatry Physician",
+            "Family Medicine",
+            "Physician",
+            "Hospice and Palliative",
+            "Medicine (Family",
+            "Medicine) Physician",
+            "Internal Medicine",
+            "Physician",
+            "Multi - Specialty Group",
+            "Nurse Practitioner",
+            "Pediatrics Physician",
+            "Physician Assistant",
+            "Podiatrist",
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.99,
+          "address": "5580 Calle Real",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-617-7878",
+          "website": "https://www.sbclinics.org",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Danielle Denise Long, PMHNP",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Psychiatric/Mental",
+            "Health Nurse",
+            "Practitioner"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 2.99,
+          "address": "5580 Calle Real",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-617-7878",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Santa, Barbara, CA, 93111",
+        "phone": null,
+        "website": "https://headway.co",
+        "distance_miles": 3.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Headway California Behavioral Healt",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Marriage & Family",
+            "Therapist",
+            "Social Worker",
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5266 Hollister Ave Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": null,
+          "website": "https://headway.co",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste 200 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste 200 Santa, Barbara, CA, 93111",
+        "phone": "805-262-7266",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Sapna M Patel Ross, PHD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical",
+            "Neuropsychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5266 Hollister Ave Ste 200 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-262-7266",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5266 Hollister Ave Ste 324 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5266 Hollister Ave Ste 324 Santa, Barbara, CA, 93111",
+        "phone": "805-682-8948",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Ousley Louise",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5266 Hollister Ave Ste 324 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-682-8948",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5276 Hollister Ave Ste 103 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5276 Hollister Ave Ste 103 Santa, Barbara, CA, 93111",
+        "phone": "646-453-6777",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Ana B Flores Ambriz, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5276 Hollister Ave Ste 103 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "646-453-6777",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5276 Hollister Ave Ste 152",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5276 Hollister Ave Ste 152, Goleta, CA, 93111",
+        "phone": "646-453-6777",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Amy M Hamilton, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5276 Hollister Ave Ste 152",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "646-453-6777",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5333 Hollister Ave Ste 225 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5333 Hollister Ave Ste 225 Santa, Barbara, CA, 93111",
+        "phone": "805-964-2226",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Yana M Van Arsdale, MD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Psychiatry Physician"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5333 Hollister Ave Ste 225 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-964-2226",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5385 Hollister Ave Bldg 11 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5385 Hollister Ave Bldg 11 Santa, Barbara, CA, 93111",
+        "phone": "805-725-0649",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 9,
+      "providers": [
+        {
+          "name": "Jessica Kelso, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-683-8060",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Lia Verlander, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Maryam Hanachi, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Kathleen Leeper, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Kaitlynn Penner, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-683-8060",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Jordan-Emily Senephansiri, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Carrie Daly, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Christina Melanie Saez, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Lindsay Lettow, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 11 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5385 Hollister Ave Bldg 2 3 & 11",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5385 Hollister Ave Bldg 2 3 & 11, Goleta, CA, 93111",
+        "phone": "805-725-0649",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 6,
+      "providers": [
+        {
+          "name": "Niousha Alamdar, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 2 3 & 11",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Cassandra V Watkins, LMFT",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 2 3 & 11",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Quy H Neel, PHD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst",
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 2 3 & 11",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Christina Michelle Wade, PSYD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 2 3 & 11",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Lissa G Frecker, PHD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst",
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 2 3 & 11",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Susan Gehrig, LP, PSYD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 2 3 & 11",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5385 Hollister Ave Bldg 2 Santa",
+        "city": "Barbara",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5385 Hollister Ave Bldg 2 Santa, Barbara, CA, 93111",
+        "phone": "805-725-0649",
+        "website": null,
+        "distance_miles": 3.24
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Eva Kowalewicz, PSYD",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Clinical Psychologist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 2 Santa",
+          "city": "Barbara",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "5385 Hollister Ave Bldg 3",
+        "city": "Goleta",
+        "state": "CA",
+        "zip": "93111",
+        "county": "Santa Barbara County",
+        "full_address": "5385 Hollister Ave Bldg 3, Goleta, CA, 93111",
+        "phone": "805-725-0649",
+        "website": "https://starofca.com",
+        "distance_miles": 3.24
+      },
+      "provider_count": 3,
+      "providers": [
+        {
+          "name": "Vanessa Salice, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 3",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-683-8060",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Star of CA",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Behavioral Analyst",
+            "Marriage & Family",
+            "Therapist"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 3",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": "https://starofca.com",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        },
+        {
+          "name": "Michele Zelnick, BCBA",
+          "in_network": true,
+          "gender": "Female",
+          "specialties": [
+            "Behavioral Analyst"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 3.24,
+          "address": "5385 Hollister Ave Bldg 3",
+          "city": "Goleta",
+          "state": "CA",
+          "zip": "93111",
+          "county": "Santa Barbara County",
+          "phone": "805-725-0649",
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "Serving This State Las",
+        "city": "Vegas",
+        "state": "NV",
+        "zip": "89148",
+        "county": "Clark County NV",
+        "full_address": "Serving This State Las, Vegas, NV, 89148",
+        "phone": "323-798-7413",
+        "website": "https://www.rula.com/getc",
+        "distance_miles": 280.9
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Rula Health",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": 280.9,
+          "address": "Serving This State Las",
+          "city": "Vegas",
+          "state": "NV",
+          "zip": "89148",
+          "county": "Clark County NV",
+          "phone": "323-798-7413",
+          "website": "https://www.rula.com/getc",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": null,
+        "city": null,
+        "state": null,
+        "zip": null,
+        "county": null,
+        "full_address": "Behavioral Health Mikhail Meyerovich, MD",
+        "phone": null,
+        "website": null,
+        "distance_miles": null
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Behavioral Health Mikhail Meyerovich, MD",
+          "in_network": true,
+          "gender": null,
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": null,
+          "address": null,
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": null,
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": null,
+        "city": null,
+        "state": null,
+        "zip": null,
+        "county": null,
+        "full_address": "Carelon Health Ipa Barry J Mills, MD",
+        "phone": null,
+        "website": null,
+        "distance_miles": null
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Carelon Health Ipa Barry J Mills, MD",
+          "in_network": true,
+          "gender": null,
+          "specialties": [],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": null,
+          "address": null,
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": null,
+          "website": null,
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    },
+    {
+      "location": {
+        "address": "Serving New Hampshire State NH",
+        "city": null,
+        "state": null,
+        "zip": null,
+        "county": null,
+        "full_address": "Serving New Hampshire State NH",
+        "phone": "212-284-7206",
+        "website": "https://www.talkspace.co",
+        "distance_miles": null
+      },
+      "provider_count": 1,
+      "providers": [
+        {
+          "name": "Talkspace",
+          "in_network": true,
+          "gender": null,
+          "specialties": [
+            "Multi - Specialty Group",
+            "Mental Health (Including",
+            "Community Mental",
+            "Health Center)",
+            "m/coverage/insurance/ant"
+          ],
+          "provider_role": null,
+          "recognitions": [],
+          "pcp_ids": [],
+          "distance_miles": null,
+          "address": "Serving New Hampshire State NH",
+          "city": null,
+          "state": null,
+          "zip": null,
+          "county": null,
+          "phone": "212-284-7206",
+          "website": "https://www.talkspace.co",
+          "care_options": [
+            "behavioral_health"
+          ],
+          "original_category": "behavioral_health"
+        }
+      ]
+    }
+  ]
+}

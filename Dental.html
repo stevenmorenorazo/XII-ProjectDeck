@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Providers • UC Ship Finder</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #003660;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .top-bar {
+            background-color: #002a47;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .top-bar-title {
+            color: #FFCE34;
+            font-size: 1.8rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 25px;
+        }
+
+        .filters {
+            background-color: #002a47;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .filters h2 {
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            color: #FFCE34;
+        }
+
+        .filter-group {
+            margin-bottom: 20px;
+        }
+
+        .filter-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .filter-group input,
+        .filter-group select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: none;
+            font-size: 1rem;
+        }
+
+        .location-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #d6b704;
+            color: #000;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .location-btn:hover {
+            background-color: #aa8e32;
+        }
+
+        .providers {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .provider-card {
+            display: grid;
+            grid-template-columns: 180px 1fr;
+            background-color: #002a47;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .provider-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .provider-info {
+            padding: 15px;
+        }
+
+        .provider-info h3 {
+            margin-bottom: 5px;
+            font-size: 1.2rem;
+        }
+
+        .rating {
+            color: #FFCE34;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .provider-info p {
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+            color: #d9e6f2;
+        }
+
+        .provider-meta {
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .provider-links a {
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 5px;
+            padding: 8px 12px;
+            background-color: #d6b704;
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .provider-links a:hover {
+            background-color: #aa8e32;
+        }
+
+        @media (max-width: 900px) {
+            .layout {
+                grid-template-columns: 1fr;
+            }
+
+            .provider-card {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="top-bar-title">UC Ship finder</div>
+    </div>
+
+    <div class="main">
+        <h1>Dental Providers Near UCSB</h1>
+
+        <div class="layout">
+            <!-- FILTERS -->
+            <div class="filters">
+                <h2>Filter</h2>
+
+                <div class="filter-group">
+                    <label>Sort by</label>
+                    <select id="sort">
+                        <option value="distance">Proximity</option>
+                        <option value="rating">Rating</option>
+                        <option value="name-asc">Name (A–Z)</option>
+                        <option value="name-desc">Name (Z–A)</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label>Minimum rating</label>
+                    <select id="minRating">
+                        <option value="0">Any</option>
+                        <option value="4">4.0+</option>
+                        <option value="4.5">4.5+</option>
+                    </select>
+                </div>
+
+                <button class="location-btn" onclick="getLocation()">Use my location</button>
+                <p id="locationStatus" style="margin-top:10px;font-size:0.85rem;"></p>
+            </div>
+
+            <div class="providers" id="providers"></div>
+        </div>
+    </div>
+
+    <script>
+    let userLocation = null; 
+    function getLocation() {
+        const status = document.getElementById("locationStatus");
+        if (!navigator.geolocation) {
+        status.textContent = "Geolocation is not supported by your browser.";
+        return;
+    }
+
+    status.textContent = "Getting your location…";
+
+    navigator.geolocation.getCurrentPosition(
+        (position) => {
+            userLocation = {
+                lat: position.coords.latitude,
+                lng: position.coords.longitude
+            };
+
+            status.textContent =
+                `Location enabled ✓ (${userLocation.lat.toFixed(4)}, ${userLocation.lng.toFixed(4)})`;
+
+            // For now, just re-render (later this will fetch from backend)
+            renderProviders();
+        },
+        (error) => {
+            status.textContent = "Unable to retrieve your location.";
+        }
+    );
+}
+
+    const providers = [
+  {
+    name: "Isla Vista Family Dentistry",
+    rating: 4.6,
+    description: "General and cosmetic dentistry. Student-friendly scheduling and UC SHIP billing.",
+    phone: "(805) 555-1234",
+    address: "6549 Pardall Rd, Isla Vista, CA",
+    lat: 34.4126,
+    lng: -119.8567,
+    img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=60"
+  },
+  {
+    name: "Downtown Santa Barbara Dental",
+    rating: 4.8,
+    description: "Preventive care, cleanings, and emergency visits. Accepting new patients.",
+    phone: "(805) 555-9876",
+    address: "123 State St, Santa Barbara, CA",
+    lat: 34.4208,
+    lng: -119.6982,
+    img: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=800&q=60"
+  }
+];
+
+    
+    function renderProviders() {
+        const container = document.getElementById("providers");
+        const sortValue = document.getElementById("sort").value;
+        container.innerHTML = "";
+
+        let sortedProviders = [...providers];
+        sortedProviders = sortedProviders.map(p => {
+            if (userLocation && p.lat != null && p.lng != null) {
+                return {
+                    ...p,
+                   distance: distanceMiles(userLocation, { lat: p.lat, lng: p.lng })
+                };
+            }
+            return { ...p, distance: null };
+        });
+        if (sortValue === "distance") {
+         sortedProviders.sort((a, b) => (a.distance ?? Infinity) - (b.distance ?? Infinity));
+        }
+        else if (sortValue === "rating") {
+            sortedProviders.sort((a, b) => b.rating - a.rating);
+        } 
+        else if (sortValue === "name-asc") {
+            sortedProviders.sort((a, b) => a.name.localeCompare(b.name));
+        } 
+        else if (sortValue === "name-desc") {
+            sortedProviders.sort((a, b) => b.name.localeCompare(a.name));
+        }
+
+        sortedProviders.forEach(p => {
+            const mapsLink = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(p.address)}`;
+
+            container.innerHTML += `
+                <div class="provider-card">
+                    <img src="${p.img}" alt="${p.name}">
+                    <div class="provider-info">
+                        <h3>${p.name}</h3>
+                        <div class="rating">★ ${p.rating}</div>
+                            ★ ${p.rating}${p.distance != null ? ` • ${p.distance.toFixed(1)} mi` : ""}
+                        </div>
+
+                        <p>${p.description}</p>
+                        <div class="provider-meta">
+                            📍 ${p.address}<br>
+                            📞 ${p.phone}
+                        </div>
+                        <div class="provider-links">
+                            <a href="${mapsLink}" target="_blank">Google Maps</a>
+                            <a href="tel:${p.phone.replace(/\\D/g,'')}">Call</a>
+                        </div>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    document.getElementById("sort").addEventListener("change", renderProviders);
+
+    renderProviders();
+</script>
+
+</body>
+</html>

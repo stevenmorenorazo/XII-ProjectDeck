@@ -245,7 +245,7 @@
       status.textContent = "Getting your location…";
 
       navigator.geolocation.getCurrentPosition(
-        (position) => {
+        async (position) => {
           userLocation = {
             lat: position.coords.latitude,
             lng: position.coords.longitude
@@ -254,7 +254,8 @@
           status.textContent =
             `Location enabled ✓ (${userLocation.lat.toFixed(4)}, ${userLocation.lng.toFixed(4)})`;
 
-          renderProviders();
+          // Geocode provider addresses if needed, then render
+          await geocodeProviders();
         },
         () => {
           status.textContent = "Unable to retrieve your location.";
@@ -269,8 +270,8 @@
         description: "General and cosmetic dentistry. Student-friendly scheduling and UC SHIP billing.",
         phone: "(805) 555-1234",
         address: "331 North Milpas St Ste 1A, Santa Barbara, CA 93103",
-        lat: 34.4126,
-        lng: -119.8567,
+        lat: 34.4284,
+        lng: -119.7142, // Will be geocoded for accuracy
         img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=60"
       },
       {
@@ -284,6 +285,60 @@
         img: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=800&q=60"
       }
     ];
+
+    // Geocode addresses using Google Maps Geocoding API (no API key needed for basic usage)
+    async function geocodeAddress(address) {
+      try {
+        // Using a free geocoding service (Nominatim) as fallback
+        const response = await fetch(
+          `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`,
+          {
+            headers: {
+              'User-Agent': 'UC Ship Finder'
+            }
+          }
+        );
+        const data = await response.json();
+        if (data && data.length > 0) {
+          return {
+            lat: parseFloat(data[0].lat),
+            lng: parseFloat(data[0].lon)
+          };
+        }
+      } catch (error) {
+        console.error('Geocoding error:', error);
+      }
+      return null;
+    }
+
+    // Geocode all provider addresses when location is enabled to ensure accuracy
+    async function geocodeProviders() {
+      const status = document.getElementById("locationStatus");
+      const originalStatus = status.textContent;
+      status.textContent = "Geocoding addresses for accurate distances...";
+      
+      let updated = false;
+      for (let provider of providers) {
+        // Always geocode to ensure accuracy (coordinates might be approximate)
+        const coords = await geocodeAddress(provider.address);
+        if (coords && coords.lat && coords.lng) {
+          provider.lat = coords.lat;
+          provider.lng = coords.lng;
+          updated = true;
+          console.log(`Geocoded ${provider.name}: ${coords.lat}, ${coords.lng}`);
+        }
+        // Add a small delay to respect rate limits (1 request per second)
+        await new Promise(resolve => setTimeout(resolve, 1000));
+      }
+      
+      if (updated) {
+        status.textContent = originalStatus + " (Addresses geocoded)";
+        console.log('Provider coordinates updated via geocoding');
+      } else {
+        status.textContent = originalStatus;
+      }
+      renderProviders();
+    }
 
     function distanceMiles(a, b) {
       const toRad = (deg) => deg * Math.PI / 180;
@@ -312,8 +367,9 @@
       let shownProviders = [...providers]
         .filter(p => p.rating >= minRating)
         .map(p => {
-          if (userLocation && p.lat != null && p.lng != null) {
-            return { ...p, distance: distanceMiles(userLocation, { lat: p.lat, lng: p.lng }) };
+          if (userLocation && p.lat != null && p.lng != null && !isNaN(p.lat) && !isNaN(p.lng)) {
+            const distance = distanceMiles(userLocation, { lat: p.lat, lng: p.lng });
+            return { ...p, distance: isNaN(distance) ? null : distance };
           }
           return { ...p, distance: null };
         });
@@ -342,8 +398,10 @@
               <h3>${p.name}</h3>
 
               <div class="rating">
-                ★ ${p.rating}${p.distance != null ? ` • ${p.distance.toFixed(1)} mi` : ""}
+                ★ ${p.rating}
               </div>
+
+              ${p.distance != null ? `<div style="color: #FFCE34; font-weight: 600; margin-bottom: 10px; font-size: 0.95rem;">📍 ${p.distance.toFixed(1)} mi away</div>` : ''}
 
               <p>${p.description}</p>
 

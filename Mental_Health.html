@@ -154,6 +154,21 @@
       border-radius: 12px;
     }
 
+    .provider-rating {
+      color: #FFCE34;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .provider-rating .rating-label {
+      color: #d9e6f2;
+      font-weight: 500;
+    }
+
     .provider-info p {
       font-size: 0.95rem;
       margin-bottom: 10px;
@@ -454,6 +469,11 @@
               <div class="location-header">
                 <h3>${address}</h3>
                 ${hasMultipleProviders ? `<span class="provider-count">${providers.length} Providers</span>` : ''}
+              </div>
+
+              <div class="provider-rating">
+                <span class="rating-label">Rating:</span>
+                <span>Unavailable</span>
               </div>
 
               ${loc.distance != null ? `<div style="color: #FFCE34; font-weight: 600; margin-bottom: 10px; font-size: 0.95rem;">📍 ${loc.distance.toFixed(1)} mi away</div>` : ''}

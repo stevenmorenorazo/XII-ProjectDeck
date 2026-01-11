@@ -154,6 +154,21 @@
       border-radius: 12px;
     }
 
+    .provider-rating {
+      color: #FFCE34;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .provider-rating .rating-label {
+      color: #d9e6f2;
+      font-weight: 500;
+    }
+
     .provider-info p {
       font-size: 0.95rem;
       margin-bottom: 10px;
@@ -530,6 +545,11 @@
               <div class="location-header">
                 <h3>${locationName}</h3>
                 <span class="provider-count">${providers.length} ${providers.length === 1 ? 'Provider' : 'Providers'}</span>
+              </div>
+
+              <div class="provider-rating">
+                <span class="rating-label">Rating:</span>
+                <span>Unavailable</span>
               </div>
 
               <div style="color: #d9e6f2; font-size: 0.9rem; margin-bottom: 10px;">

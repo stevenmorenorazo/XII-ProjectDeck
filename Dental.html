@@ -235,7 +235,7 @@
   <script>
     let userLocation = null;
 
-    function getLocation() {
+    async function getLocation() {
       const status = document.getElementById("locationStatus");
       if (!navigator.geolocation) {
         status.textContent = "Geolocation is not supported by your browser.";
@@ -251,14 +251,21 @@
             lng: position.coords.longitude
           };
 
+          status.textContent = "Geocoding provider addresses...";
+
+          // First, ensure all providers have accurate coordinates
+          await ensureProviderCoordinates();
+
+          // Update status and calculate distances
           status.textContent =
             `Location enabled ✓ (${userLocation.lat.toFixed(4)}, ${userLocation.lng.toFixed(4)})`;
 
-          // Geocode provider addresses if needed, then render
-          await geocodeProviders();
+          // Re-render with calculated distances
+          renderProviders();
         },
-        () => {
+        (error) => {
           status.textContent = "Unable to retrieve your location.";
+          console.error('Geolocation error:', error);
         }
       );
     }
@@ -269,9 +276,9 @@
         rating: 4.6,
         description: "General and cosmetic dentistry. Student-friendly scheduling and UC SHIP billing.",
         phone: "(805) 555-1234",
-        address: "331 North Milpas St Ste 1A, Santa Barbara, CA 93103",
-        lat: 34.4284,
-        lng: -119.7142, // Will be geocoded for accuracy
+        address: "5901 Encina Rd Ste C1, Goleta, CA, 93117",
+        lat: null, // Will be geocoded when location is enabled
+        lng: null,
         img: "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=60"
       },
       {
@@ -280,16 +287,16 @@
         description: "Preventive care, cleanings, and emergency visits. Accepting new patients.",
         phone: "(805) 555-9876",
         address: "123 State St, Santa Barbara, CA",
-        lat: 34.4208,
-        lng: -119.6982,
+        lat: null, // Will be geocoded when location is enabled
+        lng: null,
         img: "https://images.unsplash.com/photo-1606813907291-d86efa9b94db?auto=format&fit=crop&w=800&q=60"
       }
     ];
 
-    // Geocode addresses using Google Maps Geocoding API (no API key needed for basic usage)
+    // Geocode addresses using OpenStreetMap Nominatim (free, no API key needed)
     async function geocodeAddress(address) {
       try {
-        // Using a free geocoding service (Nominatim) as fallback
+        // Using a free geocoding service (Nominatim)
         const response = await fetch(
           `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(address)}&limit=1`,
           {
@@ -298,46 +305,61 @@
             }
           }
         );
+        
+        if (!response.ok) {
+          console.error(`Geocoding API error: ${response.status} ${response.statusText}`);
+          return null;
+        }
+        
         const data = await response.json();
-        if (data && data.length > 0) {
-          return {
-            lat: parseFloat(data[0].lat),
-            lng: parseFloat(data[0].lon)
-          };
+        if (data && Array.isArray(data) && data.length > 0 && data[0].lat && data[0].lon) {
+          const lat = parseFloat(data[0].lat);
+          const lng = parseFloat(data[0].lon);
+          
+          // Validate the coordinates
+          if (!isNaN(lat) && !isNaN(lng) && 
+              Math.abs(lat) <= 90 && Math.abs(lng) <= 180) {
+            return { lat, lng };
+          } else {
+            console.error(`Invalid coordinates returned: lat=${lat}, lng=${lng}`);
+          }
+        } else {
+          console.warn(`No results found for address: ${address}`);
         }
       } catch (error) {
-        console.error('Geocoding error:', error);
+        console.error(`Geocoding error for "${address}":`, error);
       }
       return null;
     }
 
-    // Geocode all provider addresses when location is enabled to ensure accuracy
-    async function geocodeProviders() {
-      const status = document.getElementById("locationStatus");
-      const originalStatus = status.textContent;
-      status.textContent = "Geocoding addresses for accurate distances...";
-      
-      let updated = false;
-      for (let provider of providers) {
-        // Always geocode to ensure accuracy (coordinates might be approximate)
-        const coords = await geocodeAddress(provider.address);
-        if (coords && coords.lat && coords.lng) {
-          provider.lat = coords.lat;
-          provider.lng = coords.lng;
-          updated = true;
-          console.log(`Geocoded ${provider.name}: ${coords.lat}, ${coords.lng}`);
+    // Ensure all providers have accurate coordinates (geocode if needed)
+    async function ensureProviderCoordinates() {
+      // Geocode all providers that need it
+      for (let i = 0; i < providers.length; i++) {
+        const provider = providers[i];
+        // Geocode if coordinates are missing, invalid, or seem incorrect
+        if (provider.lat == null || provider.lng == null || 
+            isNaN(provider.lat) || isNaN(provider.lng) ||
+            Math.abs(provider.lat) > 90 || Math.abs(provider.lng) > 180 ||
+            provider.lat === 0 || provider.lng === 0) {
+          console.log(`Geocoding ${provider.name}...`);
+          const coords = await geocodeAddress(provider.address);
+          if (coords && coords.lat != null && coords.lng != null && 
+              !isNaN(coords.lat) && !isNaN(coords.lng)) {
+            provider.lat = coords.lat;
+            provider.lng = coords.lng;
+            console.log(`✓ Geocoded ${provider.name}: ${coords.lat}, ${coords.lng}`);
+          } else {
+            console.warn(`✗ Failed to geocode ${provider.name} at ${provider.address}`);
+          }
+          // Add a small delay to respect rate limits (1 request per second)
+          if (i < providers.length - 1) {
+            await new Promise(resolve => setTimeout(resolve, 1000));
+          }
+        } else {
+          console.log(`✓ ${provider.name} already has coordinates: ${provider.lat}, ${provider.lng}`);
         }
-        // Add a small delay to respect rate limits (1 request per second)
-        await new Promise(resolve => setTimeout(resolve, 1000));
       }
-      
-      if (updated) {
-        status.textContent = originalStatus + " (Addresses geocoded)";
-        console.log('Provider coordinates updated via geocoding');
-      } else {
-        status.textContent = originalStatus;
-      }
-      renderProviders();
     }
 
     function distanceMiles(a, b) {
@@ -364,12 +386,31 @@
 
       container.innerHTML = "";
 
+      // Calculate distances from user location to each provider
       let shownProviders = [...providers]
         .filter(p => p.rating >= minRating)
         .map(p => {
-          if (userLocation && p.lat != null && p.lng != null && !isNaN(p.lat) && !isNaN(p.lng)) {
-            const distance = distanceMiles(userLocation, { lat: p.lat, lng: p.lng });
-            return { ...p, distance: isNaN(distance) ? null : distance };
+          // Only calculate distance if user location is available and provider has valid coordinates
+          if (userLocation) {
+            // Check if provider has valid coordinates
+            if (p.lat != null && p.lng != null && 
+                !isNaN(p.lat) && !isNaN(p.lng) &&
+                Math.abs(p.lat) <= 90 && Math.abs(p.lng) <= 180 &&
+                p.lat !== 0 && p.lng !== 0) {
+              try {
+                const distance = distanceMiles(userLocation, { lat: p.lat, lng: p.lng });
+                if (!isNaN(distance) && isFinite(distance) && distance >= 0) {
+                  console.log(`Distance for ${p.name}: ${distance.toFixed(2)} miles`);
+                  return { ...p, distance: distance };
+                } else {
+                  console.warn(`Invalid distance calculated for ${p.name}: ${distance}`);
+                }
+              } catch (error) {
+                console.error(`Error calculating distance for ${p.name}:`, error);
+              }
+            } else {
+              console.warn(`Invalid coordinates for ${p.name}: lat=${p.lat}, lng=${p.lng}`);
+            }
           }
           return { ...p, distance: null };
         });

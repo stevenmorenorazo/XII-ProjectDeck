@@ -12,11 +12,26 @@
         }
 
         body {
-            background-color: #003660;
+            background: linear-gradient(to top, #003660 0%, #004a7a 50%, #005a9a 100%);
+            background-size: 100% 200%;
+            animation: gradientShift 8s ease infinite;
             color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
+            min-height: 100vh;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .top-bar {

@@ -112,7 +112,7 @@ class AnalyzeRequest(BaseModel):
     text: str
 
 class AnalyzeResponse(BaseModel):
-    providerType: Category
+    providerTypes: List[Category]
 
 # -----------------------------
 # App
@@ -244,14 +244,15 @@ async def analyze_health_need(request: AnalyzeRequest):
                         {
                             "role": "system",
                             "content": """You are a healthcare assistant helping students at UCSB determine which type of healthcare provider they need. 
-                            Based on the user's description, suggest ONE of the following provider types:
+                            Based on the user's description, suggest one or more of the following provider types (comma-separated if multiple):
                             - dental (for dental issues, tooth pain, oral health, cleanings)
                             - primary_care (for general health, check-ups, non-urgent medical issues, ongoing care)
                             - urgent_care (for immediate but non-life-threatening medical attention, injuries, sudden illness)
                             - optometrist (for eye exams, vision problems, eye care)
                             - mental_health (for mental health, therapy, counseling, emotional support, anxiety, depression)
                             
-                            Respond with ONLY the provider type key (dental, primary_care, urgent_care, optometrist, or mental_health) in lowercase, nothing else."""
+                            If multiple provider types could help, list them all separated by commas.
+                            Respond with ONLY the provider type key(s) in lowercase, comma-separated if multiple (e.g., "dental" or "primary_care, urgent_care"), nothing else."""
                         },
                         {
                             "role": "user",
@@ -259,7 +260,7 @@ async def analyze_health_need(request: AnalyzeRequest):
                         }
                     ],
                     "temperature": 0.3,
-                    "max_tokens": 10
+                    "max_tokens": 50
                 },
                 timeout=30.0
             )
@@ -272,14 +273,20 @@ async def analyze_health_need(request: AnalyzeRequest):
                 )
             
             data = response.json()
-            provider_type = data["choices"][0]["message"]["content"].strip().lower()
+            response_text = data["choices"][0]["message"]["content"].strip().lower()
             
-            # Validate provider type
-            if provider_type not in ["dental", "primary_care", "urgent_care", "optometrist", "mental_health"]:
-                # Default to primary_care if invalid response
-                provider_type = "primary_care"
+            # Parse comma-separated provider types
+            valid_types = ["dental", "primary_care", "urgent_care", "optometrist", "mental_health"]
+            provider_types = [pt.strip() for pt in response_text.split(",")]
             
-            return AnalyzeResponse(providerType=provider_type)
+            # Filter to only valid types and remove duplicates
+            provider_types = list(dict.fromkeys([pt for pt in provider_types if pt in valid_types]))
+            
+            # If no valid types found, default to primary_care
+            if not provider_types:
+                provider_types = ["primary_care"]
+            
+            return AnalyzeResponse(providerTypes=provider_types)
             
     except httpx.TimeoutException:
         raise HTTPException(status_code=504, detail="Request timeout. Please try again.")

@@ -427,27 +427,39 @@
 
     // Ensure all locations have coordinates (geocode if needed)
     async function ensureLocationCoordinates() {
+      let geocodedCount = 0;
       for (let i = 0; i < locationsData.length; i++) {
         const loc = locationsData[i];
         const location = loc.location;
         const address = formatAddress(location);
         
-        // Initialize coordinates if not present
+        // Initialize coordinates if not present or invalid
         if (!location.lat || !location.lng || 
-            isNaN(location.lat) || isNaN(location.lng)) {
-          console.log(`Geocoding ${address}...`);
+            isNaN(location.lat) || isNaN(location.lng) ||
+            Math.abs(location.lat) > 90 || Math.abs(location.lng) > 180 ||
+            location.lat === 0 || location.lng === 0) {
+          console.log(`Geocoding ${i + 1}/${locationsData.length}: ${address}...`);
           const coords = await geocodeAddress(address);
-          if (coords) {
+          if (coords && coords.lat != null && coords.lng != null) {
             location.lat = coords.lat;
             location.lng = coords.lng;
-            console.log(`✓ Geocoded: ${coords.lat}, ${coords.lng}`);
+            geocodedCount++;
+            console.log(`✓ Geocoded ${i + 1}: ${coords.lat.toFixed(4)}, ${coords.lng.toFixed(4)}`);
+          } else {
+            console.warn(`✗ Failed to geocode: ${address}`);
+            // Set to null to indicate no coordinates
+            location.lat = null;
+            location.lng = null;
           }
-          // Add delay to respect rate limits
+          // Add delay to respect rate limits (1 request per second)
           if (i < locationsData.length - 1) {
             await new Promise(resolve => setTimeout(resolve, 1000));
           }
+        } else {
+          console.log(`✓ Location ${i + 1} already has coordinates: ${location.lat}, ${location.lng}`);
         }
       }
+      console.log(`Geocoding complete: ${geocodedCount} locations geocoded`);
     }
 
     function distanceMiles(a, b) {
